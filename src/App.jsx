@@ -7,6 +7,7 @@ import Home from './pages/home'
 import About from './pages/about'
 import Contact from './pages/contact'
 import Gallery from './pages/gallery'
+import Testimonials from './pages/testimonials'
 
 // Root Layout component that includes the Navbar and renders child routes
 const RootLayout = () => {
@@ -45,8 +46,8 @@ const router = createBrowserRouter([
       { path: "about", element: <About /> },
       { path: "gallery", element: <Gallery /> },
       { path: "contact", element: <Contact /> },
-      { path: "export", element: <div className="min-h-screen py-20 text-center"><h1 className="text-2xl">Export Solutions Coming Soon</h1></div> },
-      { path: "quality", element: <div className="min-h-screen py-20 text-center"><h1 className="text-2xl">Quality Page Coming Soon</h1></div> }
+      { path: "testimonials", element: <Testimonials /> },
+      { path: "export", element: <div className="min-h-screen py-20 text-center"><h1 className="text-2xl">Export Solutions Coming Soon</h1></div> }
     ]
   }
 ]);
