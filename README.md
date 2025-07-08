@@ -1,12 +1,140 @@
-# React + Vite
+<!-- Here's a complete and professional `README.md` template for your **Vite + React** project with:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+* Project intro
+* How to run
+* Contact page info with EmailJS
+* Tech stack
+* Folder structure (optional section)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📄 `README.md`
 
-## Expanding the ESLint configuration
+```markdown
+# 🌐 Ashley — Premium Pomegranate Export Website
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This is a responsive and modern website built with **Vite + React** for a business exporting fresh Indian pomegranates globally. It includes sections like Home, About Us, Product Showcase, and Contact Us — all without a backend.
+
+---
+
+## 🚀 Live Demo
+
+🔗 [View Website](https://your-deployed-site-link.com)
+
+---
+
+## 📂 Project Structure
+
+```
+
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── App.jsx
+│   └── main.jsx
+├── index.html
+└── tailwind.config.js (if used)
+
+````
+
+---
+
+## 🛠️ How to Run This Project
+
+### ✅ 1. Clone the Repository
+```bash
+git clone https://github.com/prajyot-codes/Ashley-Global-Exim-Website
+cd Ashley-Global-Exim-Website
+````
+
+### ✅ 2. Install Dependencies
+
+Make sure you have Node.js v16 or above.
+
+```bash
+npm install
+```
+
+### ✅ 3. Run Development Server
+
+```bash
+npm run dev
+```
+
+Then open: [http://localhost:5173](http://localhost:5173)
+
+### ✅ 4. Build for Production
+
+```bash
+npm run build
+```
+
+### ✅ 5. Preview the Build
+
+```bash
+npm run preview
+```
+
+---
+
+## ✉️ Contact Page Setup (via EmailJS)
+
+This project includes a **Contact Us** form that works without a backend using [EmailJS](https://emailjs.com/).
+
+### 📧 Features:
+
+* Fields: Name, WhatsApp Number, Email, Message
+* WhatsApp Business link
+* Business email and phone
+* Google Maps embedded office address
+
+### 🔧 How to Configure:
+
+1. Go to [EmailJS.com](https://emailjs.com/) and sign up
+2. Add your email service (e.g., Gmail)
+3. Create a new **email template** with fields: `user_name`, `user_whatsapp`, `user_email`, `message`
+4. Copy your:
+
+   * **Service ID**
+   * **Template ID**
+   * **Public Key**
+5. In your project:
+
+   ```bash
+   npm install @emailjs/browser
+   ```
+6. In `Contact.jsx`, use:
+
+   ```js
+   emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formRef.current, 'YOUR_PUBLIC_KEY')
+   ```
+
+---
+
+## 🛠 Tech Stack
+
+* ⚡ Vite
+* ⚛️ React
+* 💨 Tailwind CSS 
+* ✉️ EmailJS *(contact form integration)*
+* 🗺 Google Maps Embed
+
+---
+
+## 📬 Contact
+
+**Email:** [yourbusiness@email.com](mailto:yourbusiness@email.com)
+**Phone:** +91-9876543210
+**WhatsApp:** [Chat on WhatsApp](https://wa.me/919876543210)
+**Office Address:** 123, MG Road, Mumbai, India
+
+---
+
+## 🧾 License
+
+This project is licensed under the MIT License.
+Feel free to fork and customize it for your own business!
+
+
+```
