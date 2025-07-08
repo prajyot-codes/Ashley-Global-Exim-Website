@@ -10,7 +10,7 @@ const Home = () => {
             alt="Fresh pomegranates" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black opacity-0"></div>
+          <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
 
         {/* Hero Content */}
@@ -18,7 +18,7 @@ const Home = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up">
             Ashley Global Exim
           </h1>
-          <p className="text-xl md:text-2xl mb-4 font-light opacity-90">
+          <p className="text-xl md:text-2xl mb-4 font-bold opacity-90">
             PREMIUM INDIAN EXPORTS
           </p>
           
