@@ -23,9 +23,9 @@ const Home = () => {
           </p>
           
           {/* Mission Statement */}
-          <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 mb-8 border border-white border-opacity-20">
+          <div className="bg-yellow bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 mb-8 border border-white border-opacity-20">
             <p className="text-2xl md:text-3xl font-semibold mb-4" style={{color: '#AED581'}}>
-              "Delivering Farm-Fresh Indian Pomegranates to the World."
+              "Our story, rooted in Quality"
             </p>
             <p className="text-lg opacity-90">
               Trusted by international buyers for premium quality, authentic sourcing, and reliable export solutions.
@@ -39,6 +39,12 @@ const Home = () => {
               style={{backgroundColor: '#2E7D32'}}
               onMouseEnter={(e) => e.target.style.backgroundColor = '#5D4037'}
               onMouseLeave={(e) => e.target.style.backgroundColor = '#2E7D32'}
+              onClick={() => {
+                const contactSection = document.getElementById('contact');
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
             >
               Get Quote Now
             </button>
@@ -47,6 +53,12 @@ const Home = () => {
               style={{color: 'white'}}
               onMouseEnter={(e) => {e.target.style.color = '#2E7D32'; e.target.style.backgroundColor = 'white';}}
               onMouseLeave={(e) => {e.target.style.color = 'white'; e.target.style.backgroundColor = 'transparent';}}
+              onClick={() => {
+                const productsSection = document.getElementById('products');
+                if (productsSection) {
+                  productsSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
             >
               View Products
             </button>

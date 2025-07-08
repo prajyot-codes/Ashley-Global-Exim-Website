@@ -99,7 +99,8 @@ const ProductCard = ({ product }) => {
           onMouseEnter={(e) => e.target.style.backgroundColor = '#5D4037'}
           onMouseLeave={(e) => e.target.style.backgroundColor = '#2E7D32'}
         >
-          Get Quote for {product.name}
+         Get Quote
+          {/* Get Quote /*for {product.name}*/ }
         </button>
       </div>
 

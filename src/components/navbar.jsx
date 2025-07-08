@@ -1,15 +1,38 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({ activeSection }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMenuOpen(false); // Close mobile menu after clicking
+  };
+
+  const isActive = (section) => activeSection === section;
+
+  const getLinkClassName = (section) => {
+    const baseClass = "px-2 py-2 text-base font-medium transition-colors duration-200 border-b-2 whitespace-nowrap cursor-pointer";
+    return isActive(section) 
+      ? `${baseClass} text-green-700 border-green-500`
+      : `${baseClass} border-transparent text-green-800 hover:text-green-600 hover:border-green-300`;
+  };
+
+  const getMobileLinkClassName = (section) => {
+    const baseClass = "block px-3 py-2 text-base font-medium rounded-md cursor-pointer";
+    return isActive(section)
+      ? `${baseClass} text-green-700 bg-green-50`
+      : `${baseClass} text-green-800 hover:text-green-600 hover:bg-green-50`;
+  };
+
   return (
-    <nav className="bg-white shadow-lg sticky top-0 z-50 border-b border-gray-200">
+    <nav className="bg-white shadow-lg sticky top-0 z-50 border-b border-gray-200 text-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo and Company Name */}
@@ -29,69 +52,42 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:block flex-grow">
             <div className="flex items-baseline justify-center space-x-6">
-              <Link
-                to="/"
-                className="px-2 py-2 text-base font-medium transition-colors duration-200 border-b-2 border-transparent whitespace-nowrap"
-                style={{color: '#2E7D32'}}
-                onMouseEnter={(e) => {e.target.style.color = '#5D4037'; e.target.style.borderColor = '#AED581';}}
-                onMouseLeave={(e) => {e.target.style.color = '#2E7D32'; e.target.style.borderColor = 'transparent';}}
+              <span
+                onClick={() => scrollToSection('home')}
+                className={getLinkClassName('home')}
               >
                 Home
-              </Link>
-<Link
-  to="/about"
-  className="px-2 py-2 text-base font-medium transition-colors duration-200 border-b-2 border-transparent whitespace-nowrap"
-  style={{color: '#2E7D32'}}
-  onMouseEnter={(e) => {e.target.style.color = '#5D4037'; e.target.style.borderColor = '#AED581';}}
-  onMouseLeave={(e) => {e.target.style.color = '#2E7D32'; e.target.style.borderColor = 'transparent';}}
->
-  About Us
-</Link>
-<Link
-  to="/products"
-  className="px-2 py-2 text-base font-medium transition-colors duration-200 border-b-2 border-transparent whitespace-nowrap"
-  style={{color: '#2E7D32'}}
-  onMouseEnter={(e) => {e.target.style.color = '#5D4037'; e.target.style.borderColor = '#AED581';}}
-  onMouseLeave={(e) => {e.target.style.color = '#2E7D32'; e.target.style.borderColor = 'transparent';}}
->
-  Products
-</Link>
-<Link
-  to="/gallery"
-  className="px-2 py-2 text-base font-medium transition-colors duration-200 border-b-2 border-transparent whitespace-nowrap"
-  style={{color: '#2E7D32'}}
-  onMouseEnter={(e) => {e.target.style.color = '#5D4037'; e.target.style.borderColor = '#AED581';}}
-  onMouseLeave={(e) => {e.target.style.color = '#2E7D32'; e.target.style.borderColor = 'transparent';}}
->
-  Gallery
-</Link>
-<Link
-  to="/export"
-  className="px-2 py-2 text-base font-medium transition-colors duration-200 border-b-2 border-transparent whitespace-nowrap"
-  style={{color: '#2E7D32'}}
-  onMouseEnter={(e) => {e.target.style.color = '#5D4037'; e.target.style.borderColor = '#AED581';}}
-  onMouseLeave={(e) => {e.target.style.color = '#2E7D32'; e.target.style.borderColor = 'transparent';}}
->
-  Export Solutions
-</Link>
-<Link
-  to="/testimonials"
-  className="px-2 py-2 text-base font-medium transition-colors duration-200 border-b-2 border-transparent whitespace-nowrap"
-  style={{color: '#2E7D32'}}
-  onMouseEnter={(e) => {e.target.style.color = '#5D4037'; e.target.style.borderColor = '#AED581';}}
-  onMouseLeave={(e) => {e.target.style.color = '#2E7D32'; e.target.style.borderColor = 'transparent';}}
->
-  Testimonials
-</Link>
-<Link
-  to="/contact"
-  className="px-2 py-2 text-base font-medium transition-colors duration-200 border-b-2 border-transparent whitespace-nowrap"
-  style={{color: '#2E7D32'}}
-  onMouseEnter={(e) => {e.target.style.color = '#5D4037'; e.target.style.borderColor = '#AED581';}}
-  onMouseLeave={(e) => {e.target.style.color = '#2E7D32'; e.target.style.borderColor = 'transparent';}}
->
-  Contact
-</Link>
+              </span>
+              <span
+                onClick={() => scrollToSection('about')}
+                className={getLinkClassName('about')}
+              >
+                About Us
+              </span>
+              <span
+                onClick={() => scrollToSection('products')}
+                className={getLinkClassName('products')}
+              >
+                Products
+              </span>
+              <span
+                onClick={() => scrollToSection('gallery')}
+                className={getLinkClassName('gallery')}
+              >
+                Gallery
+              </span>
+              <span
+                onClick={() => scrollToSection('testimonials')}
+                className={getLinkClassName('testimonials')}
+              >
+                Testimonials
+              </span>
+              <span
+                onClick={() => scrollToSection('contact')}
+                className={getLinkClassName('contact')}
+              >
+                Contact
+              </span>
             </div>
           </div>
 
@@ -139,69 +135,42 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200 shadow-lg">
           <div className="px-2 pt-2 pb-3 space-y-1">
-<Link
-  to="/"
-  className="block px-3 py-2 text-base font-medium rounded-md"
-  style={{color: '#2E7D32'}}
-  onMouseEnter={(e) => {e.target.style.color = '#5D4037'; e.target.style.backgroundColor = 'rgba(174, 213, 129, 0.1)';}}
-  onMouseLeave={(e) => {e.target.style.color = '#2E7D32'; e.target.style.backgroundColor = 'transparent';}}
->
-  Home
-</Link>
-<Link
-  to="/about"
-  className="block px-3 py-2 text-base font-medium rounded-md"
-  style={{color: '#2E7D32'}}
-  onMouseEnter={(e) => {e.target.style.color = '#5D4037'; e.target.style.backgroundColor = 'rgba(174, 213, 129, 0.1)';}}
-  onMouseLeave={(e) => {e.target.style.color = '#2E7D32'; e.target.style.backgroundColor = 'transparent';}}
->
-  About Us
-</Link>
-<Link
-  to="/products"
-  className="block px-3 py-2 text-base font-medium rounded-md"
-  style={{color: '#2E7D32'}}
-  onMouseEnter={(e) => {e.target.style.color = '#5D4037'; e.target.style.backgroundColor = 'rgba(174, 213, 129, 0.1)';}}
-  onMouseLeave={(e) => {e.target.style.color = '#2E7D32'; e.target.style.backgroundColor = 'transparent';}}
->
-  Products
-</Link>
-<Link
-  to="/gallery"
-  className="block px-3 py-2 text-base font-medium rounded-md"
-  style={{color: '#2E7D32'}}
-  onMouseEnter={(e) => {e.target.style.color = '#5D4037'; e.target.style.backgroundColor = 'rgba(174, 213, 129, 0.1)';}}
-  onMouseLeave={(e) => {e.target.style.color = '#2E7D32'; e.target.style.backgroundColor = 'transparent';}}
->
-  Gallery
-</Link>
-<Link
-  to="/export"
-  className="block px-3 py-2 text-base font-medium rounded-md"
-  style={{color: '#2E7D32'}}
-  onMouseEnter={(e) => {e.target.style.color = '#5D4037'; e.target.style.backgroundColor = 'rgba(174, 213, 129, 0.1)';}}
-  onMouseLeave={(e) => {e.target.style.color = '#2E7D32'; e.target.style.backgroundColor = 'transparent';}}
->
-  Export Solutions
-</Link>
-<Link
-  to="/testimonials"
-  className="block px-3 py-2 text-base font-medium rounded-md"
-  style={{color: '#2E7D32'}}
-  onMouseEnter={(e) => {e.target.style.color = '#5D4037'; e.target.style.backgroundColor = 'rgba(174, 213, 129, 0.1)';}}
-  onMouseLeave={(e) => {e.target.style.color = '#2E7D32'; e.target.style.backgroundColor = 'transparent';}}
->
-  Testimonials
-</Link>
-<Link
-  to="/contact"
-  className="block px-3 py-2 text-base font-medium rounded-md"
-  style={{color: '#2E7D32'}}
-  onMouseEnter={(e) => {e.target.style.color = '#5D4037'; e.target.style.backgroundColor = 'rgba(174, 213, 129, 0.1)';}}
-  onMouseLeave={(e) => {e.target.style.color = '#2E7D32'; e.target.style.backgroundColor = 'transparent';}}
->
-  Contact
-</Link>
+            <span
+              onClick={() => scrollToSection('home')}
+              className={getMobileLinkClassName('home')}
+            >
+              Home
+            </span>
+            <span
+              onClick={() => scrollToSection('about')}
+              className={getMobileLinkClassName('about')}
+            >
+              About Us
+            </span>
+            <span
+              onClick={() => scrollToSection('products')}
+              className={getMobileLinkClassName('products')}
+            >
+              Products
+            </span>
+            <span
+              onClick={() => scrollToSection('gallery')}
+              className={getMobileLinkClassName('gallery')}
+            >
+              Gallery
+            </span>
+            <span
+              onClick={() => scrollToSection('testimonials')}
+              className={getMobileLinkClassName('testimonials')}
+            >
+              Testimonials
+            </span>
+            <span
+              onClick={() => scrollToSection('contact')}
+              className={getMobileLinkClassName('contact')}
+            >
+              Contact
+            </span>
             
             {/* Mobile CTA Section */}
             <div className="px-3 py-4 border-t border-gray-200">
