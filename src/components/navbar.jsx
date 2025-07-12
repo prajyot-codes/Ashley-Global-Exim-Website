@@ -1,12 +1,16 @@
 import { useState } from 'react';
-
+// This is a React component for the Navbar of the Ashley Global Exim website.
 const Navbar = ({ activeSection }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
+  // Function to scroll to a specific section
+  // This function takes a section ID, finds the corresponding element in the DOM,
+  // and scrolls to it smoothly. It also closes the mobile menu after clicking a link.
+  // The section ID should match the ID of the section you want to scroll to.
+  // This component uses Tailwind CSS for styling and is designed to be responsive.
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -19,7 +23,7 @@ const Navbar = ({ activeSection }) => {
 
   const getLinkClassName = (section) => {
     const baseClass = "px-2 py-2 text-base font-medium transition-colors duration-200 border-b-2 whitespace-nowrap cursor-pointer";
-    return isActive(section) 
+    return isActive(section)
       ? `${baseClass} text-green-700 border-green-500`
       : `${baseClass} border-transparent text-green-800 hover:text-green-600 hover:border-green-300`;
   };
@@ -39,12 +43,12 @@ const Navbar = ({ activeSection }) => {
           <div className="flex items-center flex-shrink-0 mr-4">
             <div className="flex items-center">
               {/* Logo - using a simple pomegranate emoji for now, you can replace with actual logo */}
-              <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg" style={{backgroundColor: '#2E7D32'}}>
+              <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg" style={{ backgroundColor: '#2E7D32' }}>
                 🍎
               </div>
               <div className="ml-3 hidden sm:block">
-                <h1 className="text-xl font-bold" style={{color: '#2E7D32'}}>Ashley Global Exim</h1>
-                <p className="text-xs font-medium tracking-wide" style={{color: '#5D4037'}}>PREMIUM INDIAN EXPORTS</p>
+                <h1 className="text-xl font-bold" style={{ color: '#2E7D32' }}>Ashley Global Exim</h1>
+                <p className="text-xs font-medium tracking-wide" style={{ color: '#5D4037' }}>PREMIUM INDIAN EXPORTS</p>
               </div>
             </div>
           </div>
@@ -94,20 +98,20 @@ const Navbar = ({ activeSection }) => {
           {/* CTA Button and Trust Indicators */}
           <div className="hidden md:flex items-center space-x-4 flex-shrink-0">
             {/* Trust Badge */}
-            <div className="flex items-center space-x-2 px-3 py-1 rounded-full" style={{backgroundColor: 'rgba(174, 213, 129, 0.2)'}}>
+            <div className="flex items-center space-x-2 px-3 py-1 rounded-full" style={{ backgroundColor: 'rgba(174, 213, 129, 0.2)' }}>
               <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-              <span className="text-xs font-medium" style={{color: '#2E7D32'}}>Verified Exporter</span>
+              <span className="text-xs font-medium" style={{ color: '#2E7D32' }}>Verified Exporter</span>
             </div>
-            
+
             {/* Main CTA Button */}
-<button 
-  className="text-white px-6 py-2 rounded-md text-base font-medium"
-  style={{backgroundColor: '#2E7D32'}}
-  onMouseEnter={(e) => e.target.style.backgroundColor = '#5D4037'}
-  onMouseLeave={(e) => e.target.style.backgroundColor = '#2E7D32'}
->
-  Get Quote
-</button>
+            <button
+              className="text-white px-6 py-2 rounded-md text-base font-medium"
+              style={{ backgroundColor: '#2E7D32' }}
+              onMouseEnter={(e) => e.target.style.backgroundColor = '#5D4037'}
+              onMouseLeave={(e) => e.target.style.backgroundColor = '#2E7D32'}
+            >
+              Get Quote
+            </button>
           </div>
 
           {/* Mobile menu button */}
@@ -115,9 +119,9 @@ const Navbar = ({ activeSection }) => {
             <button
               onClick={toggleMenu}
               className="focus:outline-none transition-colors duration-200"
-              style={{color: '#2E7D32'}}
-              onMouseEnter={(e) => {e.target.style.color = '#5D4037';}}
-              onMouseLeave={(e) => {e.target.style.color = '#2E7D32';}}
+              style={{ color: '#2E7D32' }}
+              onMouseEnter={(e) => { e.target.style.color = '#5D4037'; }}
+              onMouseLeave={(e) => { e.target.style.color = '#2E7D32'; }}
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isMenuOpen ? (
@@ -171,21 +175,21 @@ const Navbar = ({ activeSection }) => {
             >
               Contact
             </span>
-            
+
             {/* Mobile CTA Section */}
             <div className="px-3 py-4 border-t border-gray-200">
-              <div className="flex items-center justify-center space-x-2 mb-3 px-3 py-2 rounded-full" style={{backgroundColor: 'rgba(174, 213, 129, 0.2)'}}>
+              <div className="flex items-center justify-center space-x-2 mb-3 px-3 py-2 rounded-full" style={{ backgroundColor: 'rgba(174, 213, 129, 0.2)' }}>
                 <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                <span className="text-xs font-medium" style={{color: '#2E7D32'}}>Verified Exporter</span>
+                <span className="text-xs font-medium" style={{ color: '#2E7D32' }}>Verified Exporter</span>
               </div>
-<button 
-  className="w-full text-white px-4 py-2 rounded-md text-base font-medium"
-  style={{backgroundColor: '#2E7D32'}}
-  onMouseEnter={(e) => e.target.style.backgroundColor = '#5D4037'}
-  onMouseLeave={(e) => e.target.style.backgroundColor = '#2E7D32'}
->
-  Get Quote
-</button>
+              <button
+                className="w-full text-white px-4 py-2 rounded-md text-base font-medium"
+                style={{ backgroundColor: '#2E7D32' }}
+                onMouseEnter={(e) => e.target.style.backgroundColor = '#5D4037'}
+                onMouseLeave={(e) => e.target.style.backgroundColor = '#2E7D32'}
+              >
+                Get Quote
+              </button>
             </div>
           </div>
         </div>

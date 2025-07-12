@@ -163,7 +163,7 @@ const About = () => {
               {/* Use a placeholder image, replace with your cofounder image path if available */}
               <img src="/src/assets/cofounder.jpg" alt="Co-Founder" className="w-full h-full object-cover" />
             </div>
-            <h3 className="text-xl font-bold mb-1" style={{ color: '#2E7D32' }}>Om Kumar Dhanorkar</h3>
+            <h3 className="text-xl font-bold mb-1" style={{ color: '#2E7D32' }}>Omkumar Dhanorkar</h3>
             <p className="text-gray-700 mb-2 font-medium">Co-Founder & Director</p>
             <p className="text-gray-600 text-center text-sm">Expert in international business and logistics, ensuring seamless export operations and customer satisfaction worldwide.</p>
           </div>
