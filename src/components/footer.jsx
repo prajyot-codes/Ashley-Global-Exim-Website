@@ -76,7 +76,7 @@ const Footer = () => {
                   </div>
                   <div>
                     <p className="text-gray-300 text-sm">Email</p>
-                    <p className="text-white font-medium">contact@ashleyglobal.com</p>
+                    <p className="text-white font-medium">ashleyglobalexim5@gmail.com</p>
                   </div>
                 </div>
                 
@@ -88,7 +88,7 @@ const Footer = () => {
                   </div>
                   <div>
                     <p className="text-gray-300 text-sm">Phone</p>
-                    <p className="text-white font-medium">+91 9876543210</p>
+                    <p className="text-white font-medium">+91 7972586650</p>
                   </div>
                 </div>
 
@@ -100,7 +100,7 @@ const Footer = () => {
                   </div>
                   <div>
                     <p className="text-gray-300 text-sm">Location</p>
-                    <p className="text-white font-medium">Maharashtra, India</p>
+                    <p className="text-white font-medium">Khamgaon, Maharashtra, India</p>
                   </div>
                 </div>
               </div>
@@ -132,7 +132,7 @@ const Footer = () => {
                     </svg>
                   </a>
                   
-                  <a href="https://instagram.com/ashleyglobalexim" 
+                  <a href="https://www.instagram.com/ashley_global_exim?igsh=a2JmaDEwbHdqYTFn" 
                      className="group w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 hover:bg-pink-600 transition-all duration-300 transform hover:scale-110"
                      target="_blank" rel="noopener noreferrer">
                     <svg className="w-5 h-5 text-gray-300 group-hover:text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -140,7 +140,7 @@ const Footer = () => {
                     </svg>
                   </a>
                   
-                  <a href="https://linkedin.com/company/ashleyglobalexim" 
+                  <a href="https://www.linkedin.com/company/ashley-global-exim/posts/?feedView=all&viewAsMember=true" 
                      className="group w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 hover:bg-blue-700 transition-all duration-300 transform hover:scale-110"
                      target="_blank" rel="noopener noreferrer">
                     <svg className="w-5 h-5 text-gray-300 group-hover:text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -148,7 +148,7 @@ const Footer = () => {
                     </svg>
                   </a>
                   
-                  <a href="https://wa.me/919876543210" 
+                  <a href="https://wa.me/917972586650" 
                      className="group w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 hover:bg-green-600 transition-all duration-300 transform hover:scale-110"
                      target="_blank" rel="noopener noreferrer">
                     <svg className="w-5 h-5 text-gray-300 group-hover:text-white" fill="currentColor" viewBox="0 0 20 20">
