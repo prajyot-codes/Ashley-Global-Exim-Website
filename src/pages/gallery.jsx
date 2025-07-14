@@ -1,3 +1,4 @@
+import TapeGallery from '../components/TapeGallery.jsx';    
 const Gallery = () => {
   return (
     <div className="min-h-screen py-20 bg-gray-50">
@@ -7,14 +8,14 @@ const Gallery = () => {
             Our Gallery
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Visual showcase of our premium pomegranates
+            Visual showcase of our <b>Premium Products</b>
           </p>
           <div className="w-24 h-1 mx-auto rounded-full" style={{backgroundColor: '#AED581'}}></div>
         </div>
         
         {/* Content will be added here */}
         <div className="text-center py-20">
-          <p className="text-xl text-gray-600">Gallery coming soon</p>
+          <p className="text-xl text-gray-600"><TapeGallery /></p>
         </div>
       </div>
     </div>
