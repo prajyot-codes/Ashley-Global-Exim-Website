@@ -124,10 +124,11 @@ This project includes a **Contact Us** form that works without a backend using [
 
 ## 📬 Contact
 
-**Email:** [yourbusiness@email.com](mailto:yourbusiness@email.com)
-**Phone:** +91-9876543210
-**WhatsApp:** [Chat on WhatsApp](https://wa.me/919876543210)
-**Office Address:** 123, MG Road, Mumbai, India
+**Email:** [ashleyglobalexim5@gmail.com](mailto:ashleyglobalexim5@gmail.com)
+**Phone:** +91-7972586650
+**Alternative Phone :** +91-9834093923
+**WhatsApp:** [Chat on WhatsApp](https://wa.me/917972586650)
+**Office Address:** Khamgaon, Maharashtra, India, 444303
 
 ---
 
