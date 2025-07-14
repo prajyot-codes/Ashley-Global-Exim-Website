@@ -71,30 +71,30 @@ const Products = () => {
   ];
 
   return (
-    <div className="min-h-screen py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4">
+    <div className="min-h-screen py-8 sm:py-12 md:py-16 lg:py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6" style={{color: '#2E7D32'}}>
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6" style={{color: '#2E7D32'}}>
             Our Premium Products
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-6 sm:mb-8 px-4">
             Discover our carefully curated selection of premium Indian pomegranates, 
             sourced directly from the finest farms and prepared for international export.
           </p>
-          <div className="w-24 h-1 mx-auto rounded-full" style={{backgroundColor: '#AED581'}}></div>
+          <div className="w-16 sm:w-20 md:w-24 h-1 mx-auto rounded-full" style={{backgroundColor: '#AED581'}}></div>
         </div>
 
         {/* Product Categories Filter */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 sm:mb-10 md:mb-12">
           <button 
-            className="px-6 py-3 rounded-full text-white font-semibold transition-all duration-300 transform hover:scale-105"
+            className="px-4 py-2 sm:px-6 sm:py-3 rounded-full text-white font-semibold transition-all duration-300 transform hover:scale-105 text-sm sm:text-base"
             style={{backgroundColor: '#2E7D32'}}
           >
             All Products
           </button>
           <button 
-            className="px-6 py-3 rounded-full border-2 transition-all duration-300 transform hover:scale-105"
+            className="px-4 py-2 sm:px-6 sm:py-3 rounded-full border-2 transition-all duration-300 transform hover:scale-105 text-sm sm:text-base"
             style={{borderColor: '#2E7D32', color: '#2E7D32'}}
             onMouseEnter={(e) => {e.target.style.backgroundColor = '#2E7D32'; e.target.style.color = 'white';}}
             onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent'; e.target.style.color = '#2E7D32';}}
@@ -102,7 +102,7 @@ const Products = () => {
             Premium Grade
           </button>
           <button 
-            className="px-6 py-3 rounded-full border-2 transition-all duration-300 transform hover:scale-105"
+            className="px-4 py-2 sm:px-6 sm:py-3 rounded-full border-2 transition-all duration-300 transform hover:scale-105 text-sm sm:text-base"
             style={{borderColor: '#2E7D32', color: '#2E7D32'}}
             onMouseEnter={(e) => {e.target.style.backgroundColor = '#2E7D32'; e.target.style.color = 'white';}}
             onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent'; e.target.style.color = '#2E7D32';}}
@@ -110,7 +110,7 @@ const Products = () => {
             Organic
           </button>
           <button 
-            className="px-6 py-3 rounded-full border-2 transition-all duration-300 transform hover:scale-105"
+            className="px-4 py-2 sm:px-6 sm:py-3 rounded-full border-2 transition-all duration-300 transform hover:scale-105 text-sm sm:text-base"
             style={{borderColor: '#2E7D32', color: '#2E7D32'}}
             onMouseEnter={(e) => {e.target.style.backgroundColor = '#2E7D32'; e.target.style.color = 'white';}}
             onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent'; e.target.style.color = '#2E7D32';}}
@@ -120,46 +120,46 @@ const Products = () => {
         </div>
 
         {/* Products Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-10 sm:mb-12 md:mb-16">
           {products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
 
         {/* Quality Assurance Section */}
-        <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold mb-4" style={{color: '#2E7D32'}}>
+        <div className="bg-white rounded-2xl p-6 sm:p-8 md:p-12 shadow-lg">
+          <div className="text-center mb-6 sm:mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4" style={{color: '#2E7D32'}}>
               Quality Assurance
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-4">
               Every pomegranate undergoes rigorous quality checks to ensure only the finest fruits reach international markets.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: '#AED581'}}>
-                <span className="text-2xl">🔍</span>
+              <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-3 sm:mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: '#AED581'}}>
+                <span className="text-xl sm:text-2xl">🔍</span>
               </div>
-              <h3 className="font-bold mb-2" style={{color: '#2E7D32'}}>Visual Inspection</h3>
-              <p className="text-gray-600 text-sm">Each fruit checked for size, color, and external defects</p>
+              <h3 className="font-bold mb-2 text-sm sm:text-base" style={{color: '#2E7D32'}}>Visual Inspection</h3>
+              <p className="text-gray-600 text-xs sm:text-sm px-2">Each fruit checked for size, color, and external defects</p>
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: '#AED581'}}>
-                <span className="text-2xl">🧪</span>
+              <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-3 sm:mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: '#AED581'}}>
+                <span className="text-xl sm:text-2xl">🧪</span>
               </div>
-              <h3 className="font-bold mb-2" style={{color: '#2E7D32'}}>Quality Testing</h3>
-              <p className="text-gray-600 text-sm">Sugar content, acidity, and freshness tested</p>
+              <h3 className="font-bold mb-2 text-sm sm:text-base" style={{color: '#2E7D32'}}>Quality Testing</h3>
+              <p className="text-gray-600 text-xs sm:text-sm px-2">Sugar content, acidity, and freshness tested</p>
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: '#AED581'}}>
-                <span className="text-2xl">📦</span>
+              <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-3 sm:mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: '#AED581'}}>
+                <span className="text-xl sm:text-2xl">📦</span>
               </div>
-              <h3 className="font-bold mb-2" style={{color: '#2E7D32'}}>Careful Packaging</h3>
-              <p className="text-gray-600 text-sm">Temperature-controlled packaging for optimal freshness</p>
+              <h3 className="font-bold mb-2 text-sm sm:text-base" style={{color: '#2E7D32'}}>Careful Packaging</h3>
+              <p className="text-gray-600 text-xs sm:text-sm px-2">Temperature-controlled packaging for optimal freshness</p>
             </div>
           </div>
         </div>

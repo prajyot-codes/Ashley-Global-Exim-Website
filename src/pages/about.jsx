@@ -1,73 +1,95 @@
 const About = () => {
   return (
-    <div className="min-h-screen py-20 bg-gradient-to-br from-gray-50 to-green-50">
-      <div className="max-w-7xl mx-auto px-4">
+    <div className="min-h-screen py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-green-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
-        <div className="text-center mb-20">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in" style={{ color: '#2E7D32' }}>
+        <div className="text-center mb-12 sm:mb-16 md:mb-20">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 animate-fade-in" style={{ color: '#2E7D32' }}>
             About Ashley Global Exim
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed px-4">
             Your trusted partner for premium Indian agricultural exports, connecting quality produce to global markets
           </p>
-          <div className="w-24 h-1 mx-auto rounded-full bg-gradient-to-r from-[#AED581] to-[#2E7D32]"></div>
+          <div className="w-16 sm:w-20 md:w-24 h-1 mx-auto rounded-full bg-gradient-to-r from-[#AED581] to-[#2E7D32]"></div>
         </div>
 
         {/* Mission and Vision Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20 font-[Montserrat]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16 md:mb-20 font-[Montserrat]">
           {/* Our Mission */}
-          <div className="bg-white rounded-3xl shadow-2xl p-10 flex flex-col items-center border-t-4 border-[#AED581] hover:shadow-3xl hover:scale-105 transition-all duration-300 group">
-            <div className="w-20 h-20 flex items-center justify-center rounded-full mb-6 bg-gradient-to-br from-[#AED581] to-[#2E7D32] group-hover:rotate-6 transition-transform duration-300">
-              <span className="text-4xl">🎯</span>
+          <div className="bg-white rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-8 md:p-10 flex flex-col items-center border-t-4 border-[#AED581] hover:shadow-3xl hover:scale-105 transition-all duration-300 group">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center rounded-full mb-4 sm:mb-6 bg-gradient-to-br from-[#AED581] to-[#2E7D32] group-hover:rotate-6 transition-transform duration-300">
+              <span className="text-2xl sm:text-3xl md:text-4xl">🎯</span>
             </div>
-            <h2 className="text-3xl font-bold mb-6 text-center" style={{ color: '#2E7D32' }}>Our Mission</h2>
-            <p className="text-gray-700 text-lg leading-relaxed text-center">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-center" style={{ color: '#2E7D32' }}>Our Mission</h2>
+            <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed text-center">
               To export the finest Indian agricultural produce and essential commodities worldwide by maintaining the highest standards in quality, transparency, and customer satisfaction — while empowering local farmers and contributing to sustainable agricultural practices.
             </p>
           </div>
           
           {/* Our Vision */}
-          <div className="bg-white rounded-3xl shadow-2xl p-10 flex flex-col items-center border-t-4 border-[#AED581] hover:shadow-3xl hover:scale-105 transition-all duration-300 group">
-            <div className="w-20 h-20 flex items-center justify-center rounded-full mb-6 bg-gradient-to-br from-[#AED581] to-[#2E7D32] group-hover:rotate-6 transition-transform duration-300">
-              <span className="text-4xl">🌍</span>
+          <div className="bg-white rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-8 md:p-10 flex flex-col items-center border-t-4 border-[#AED581] hover:shadow-3xl hover:scale-105 transition-all duration-300 group">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center rounded-full mb-4 sm:mb-6 bg-gradient-to-br from-[#AED581] to-[#2E7D32] group-hover:rotate-6 transition-transform duration-300">
+              <span className="text-2xl sm:text-3xl md:text-4xl">🌍</span>
             </div>
-            <h2 className="text-3xl font-bold mb-6 text-center" style={{ color: '#2E7D32' }}>Our Vision</h2>
-            <p className="text-gray-700 text-lg leading-relaxed text-center">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-center" style={{ color: '#2E7D32' }}>Our Vision</h2>
+            <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed text-center">
               To be a globally trusted export brand known for integrity, innovation, and excellence in agri-trade connecting Indian produce to every corner of the globe.
             </p>
           </div>
         </div>
 
         {/* Our Journey Timeline */}
-        <div className="bg-white rounded-3xl shadow-2xl p-12 mb-20 font-[Montserrat] border-l-8 border-[#AED581]">
-          <div className="text-center mb-12">
-            <div className="w-20 h-20 flex items-center justify-center rounded-full mx-auto mb-6 bg-gradient-to-br from-[#AED581] to-[#2E7D32]">
-              <span className="text-4xl">📖</span>
+        <div className="bg-white rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-8 md:p-12 mb-12 sm:mb-16 md:mb-20 font-[Montserrat] border-l-4 sm:border-l-8 border-[#AED581]">
+          <div className="text-center mb-8 sm:mb-10 md:mb-12">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center rounded-full mx-auto mb-4 sm:mb-6 bg-gradient-to-br from-[#AED581] to-[#2E7D32]">
+              <span className="text-2xl sm:text-3xl md:text-4xl">📖</span>
             </div>
-            <h2 className="text-4xl font-bold mb-4" style={{ color: '#2E7D32' }}>Our Journey</h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4" style={{ color: '#2E7D32' }}>Our Journey</h2>
+            <p className="text-gray-600 text-sm sm:text-base md:text-lg max-w-2xl mx-auto px-4">
               From humble beginnings to global recognition - discover how Ashley Global Exim has grown into a trusted name in agricultural exports.
             </p>
           </div>
           
           {/* Timeline */}
           <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-[#AED581] to-[#2E7D32] rounded-full"></div>
+            {/* Desktop Timeline Line */}
+            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-[#AED581] to-[#2E7D32] rounded-full"></div>
+            {/* Mobile Timeline Line */}
+            <div className="md:hidden absolute left-6 top-0 w-1 h-full bg-gradient-to-b from-[#AED581] to-[#2E7D32] rounded-full"></div>
             
             {/* 2022 */}
-            <div className="relative flex items-center justify-between mb-12">
-              <div className="w-5/12 text-right pr-8">
-                <div className="bg-gradient-to-r from-[#AED581] to-[#2E7D32] text-white px-6 py-3 rounded-full inline-block font-bold text-lg">
-                  2022
+            <div className="relative mb-8 md:mb-12">
+              {/* Desktop Layout */}
+              <div className="hidden md:flex items-center justify-between">
+                <div className="w-5/12 text-right pr-8">
+                  <div className="bg-gradient-to-r from-[#AED581] to-[#2E7D32] text-white px-4 py-2 sm:px-6 sm:py-3 rounded-full inline-block font-bold text-sm sm:text-base md:text-lg">
+                    2022
+                  </div>
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-white border-4 border-[#AED581] rounded-full z-10"></div>
+                <div className="w-5/12 pl-8">
+                  <div className="bg-gray-50 rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 min-h-[140px] flex flex-col">
+                    <h3 className="font-bold text-lg sm:text-xl mb-3 text-left" style={{ color: '#2E7D32' }}>The Beginning</h3>
+                    <p className="text-gray-700 text-sm sm:text-base leading-relaxed text-justify flex-grow">
+                      Ashley Global Exim was established by Yash Ingle (Founder) and Om Kumar Dhanorkar (Co-Founder) with a clear mission: to deliver high-quality Indian agricultural products to global markets. Started with exports of fresh vegetables to the UAE and the UK.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-white border-4 border-[#AED581] rounded-full z-10"></div>
-              <div className="w-5/12 pl-8">
-                <div className="bg-gray-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 min-h-[140px] flex flex-col">
-                  <h3 className="font-bold text-xl mb-3 text-left" style={{ color: '#2E7D32' }}>The Beginning</h3>
-                  <p className="text-gray-700 leading-relaxed text-justify flex-grow">
-                    Ashley Global Exim was established by Yash Ingle (Founder) and Om Kumar Dhanorkar (Co-Founder) with a clear mission: to deliver high-quality Indian agricultural products to global markets. Started with exports of fresh vegetables to the UAE and the UK.
-                  </p>
+              
+              {/* Mobile Layout */}
+              <div className="md:hidden flex items-start">
+                <div className="absolute left-6 transform -translate-x-1/2 w-4 h-4 bg-white border-2 border-[#AED581] rounded-full z-10"></div>
+                <div className="ml-12 flex-1">
+                  <div className="bg-gradient-to-r from-[#AED581] to-[#2E7D32] text-white px-4 py-2 rounded-full inline-block font-bold text-sm mb-4">
+                    2022
+                  </div>
+                  <div className="bg-gray-50 rounded-2xl p-4 shadow-lg">
+                    <h3 className="font-bold text-lg mb-3" style={{ color: '#2E7D32' }}>The Beginning</h3>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      Ashley Global Exim was established by Yash Ingle (Founder) and Om Kumar Dhanorkar (Co-Founder) with a clear mission: to deliver high-quality Indian agricultural products to global markets. Started with exports of fresh vegetables to the UAE and the UK.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
