@@ -65,20 +65,6 @@ const Navbar = ({ activeSection }) => {
               <div className='w-40 h-40 mr-10'>
                 <img src={logo} alt="" />
               </div>
-              <div className="ml-3 hidden sm:block">
-                <h1
-                  className="text-xl font-bold"
-                  style={{ color: '#2E7D32' }}
-                >
-                  Ashley Global Exim
-                </h1>
-                <p
-                  className="text-xs font-medium tracking-wide"
-                  style={{ color: '#5D4037' }}
-                >
-                  PREMIUM INDIAN EXPORTS
-                </p>
-              </div>
             </div>
           </div>
 
