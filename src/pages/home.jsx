@@ -1,3 +1,4 @@
+import heroImg from '../assets/hero.jpg';
 const Home = () => {
   return (
     <div className="min-h-screen">
@@ -6,7 +7,7 @@ const Home = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.pexels.com/photos/7657080/pexels-photo-7657080.jpeg" 
+            src={heroImg} 
             alt="Fresh pomegranates" 
             className="w-full h-full object-cover"
           />
@@ -23,7 +24,7 @@ const Home = () => {
           </p>
           
           {/* Mission Statement */}
-          <div className="bg-yellow bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 mb-8 border border-white border-opacity-20">
+          <div className="bg-yellow bg-opacity-10  rounded-2xl p-8 mb-8  ">
             <p className="text-2xl md:text-3xl font-semibold mb-4" style={{color: '#AED581'}}>
               "Our story, rooted in Quality"
             </p>
