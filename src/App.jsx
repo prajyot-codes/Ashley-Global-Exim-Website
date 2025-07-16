@@ -39,13 +39,14 @@ function App() {
           <Home />
         </section>
         
+        <section id="products">
+          <Products />
+        </section>
+        
         <section id="about">
           <About />
         </section>
         
-        <section id="products">
-          <Products />
-        </section>
         
         <section id="gallery">
           <Gallery />
