@@ -62,7 +62,7 @@ const Navbar = ({ activeSection }) => {
           {/* Logo */}
           <div className="flex items-center flex-shrink-0 mr-4">
             <div className="flex items-center">
-              <div className='w-40 h-40 mr-10'>
+              <div className='w-36 h-36 mr-10 py-1'>
                 <img src={logo} alt="" />
               </div>
             </div>
@@ -85,20 +85,7 @@ const Navbar = ({ activeSection }) => {
 
           {/* CTA and Indicators */}
           <div className="hidden md:flex items-center space-x-4 flex-shrink-0">
-            <div
-              className="flex items-center space-x-2 px-3 py-1 rounded-full"
-              style={{
-                backgroundColor: 'rgba(174, 213, 129, 0.2)',
-              }}
-            >
-              <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-              <span
-                className="text-xs font-medium"
-                style={{ color: '#2E7D32' }}
-              >
-                Verified Exporter
-              </span>
-            </div>
+  
 
             <button
               className="text-white px-6 py-2 rounded-md text-base font-medium"

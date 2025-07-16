@@ -79,7 +79,7 @@ const Products = () => {
             Our Premium Products
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-6 sm:mb-8 px-4">
-            Discover our carefully curated selection of premium Indian pomegranates, 
+            Discover our carefully curated selection of premium Indian agricultural produce 
             sourced directly from the finest farms and prepared for international export.
           </p>
           <div className="w-16 sm:w-20 md:w-24 h-1 mx-auto rounded-full" style={{backgroundColor: '#AED581'}}></div>
