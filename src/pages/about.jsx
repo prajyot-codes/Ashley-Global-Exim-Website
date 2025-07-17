@@ -1,3 +1,5 @@
+import founder from "../assets/founder.jpg"
+import cofounder from "../assets/cofounder.jpg"
 const About = () => {
   return (
     <div className="min-h-screen py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-green-50">
@@ -173,7 +175,7 @@ const About = () => {
           <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center border-l-4 border-[#AED581] hover:shadow-xl transition-shadow duration-300">
             <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-[#AED581] bg-gray-100 flex items-center justify-center">
               {/* Use a placeholder image, replace with your founder image path if available */}
-              <img src="/src/assets/founder.jpg" alt="Founder" className="w-full h-full object-cover" />
+              <img src={founder} alt="Founder" className="w-full h-full object-cover" />
             </div>
             <h3 className="text-xl font-bold mb-1" style={{ color: '#2E7D32' }}>Yash Ingle</h3>
             <p className="text-gray-700 mb-2 font-medium">Founder & CEO</p>
@@ -183,7 +185,7 @@ const About = () => {
           <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center border-l-4 border-[#AED581] hover:shadow-xl transition-shadow duration-300">
             <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-[#AED581] bg-gray-100 flex items-center justify-center">
               {/* Use a placeholder image, replace with your cofounder image path if available */}
-              <img src="/src/assets/cofounder.jpg" alt="Co-Founder" className="w-full h-full object-cover" />
+              <img src={cofounder} alt="Co-Founder" className="w-full h-full object-cover" />
             </div>
             <h3 className="text-xl font-bold mb-1" style={{ color: '#2E7D32' }}>Omkumar Dhanorkar</h3>
             <p className="text-gray-700 mb-2 font-medium">Co-Founder & Director</p>

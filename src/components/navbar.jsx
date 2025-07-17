@@ -71,7 +71,7 @@ const Navbar = ({ activeSection }) => {
           {/* Desktop Navigation */}
           <div className="hidden md:block flex-grow">
             <div className="flex items-baseline justify-center space-x-6">
-              {['home', 'products', 'about ', 'gallery', 'testimonials', 'contact'].map((section) => (
+              {['home', 'products', 'about', 'gallery', 'testimonials', 'contact'].map((section) => (
                 <span
                   key={section}
                   onClick={() => scrollToSection(section)}

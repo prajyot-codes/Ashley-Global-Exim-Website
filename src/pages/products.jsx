@@ -5,7 +5,6 @@ const Products = () => {
     {
       id: 1,
       name: "Premium Red Pomegranates",
-      grade: "Grade A+",
       image: "https://c8.alamy.com/comp/2ABMNAT/pomegranate-isolated-on-white-background-2ABMNAT.jpg",
       description: "description",
       size: "8-12 cm diameter",
@@ -16,7 +15,6 @@ const Products = () => {
     {
       id: 2,
       name: "Turmeric Powder",
-      grade: "Grade A",
       image: "https://t4.ftcdn.net/jpg/04/72/24/73/360_F_472247342_JK2YdMdXnW4be8n0iAbxcqnc3X85EXKb.jpg",
       description: "description",
       size: "7-11 cm diameter",
@@ -27,7 +25,6 @@ const Products = () => {
     {
       id: 3,
       name: "Onion",
-      grade: "Organic A+",
       image: "https://img.freepik.com/premium-photo/fresh-red-onion-isolated-white-background_454083-21.jpg",
       description: "description",
       size: "5-7 cm diameter",
@@ -38,7 +35,6 @@ const Products = () => {
     {
       id: 4,
       name: "Green Chilli",
-      grade: "Grade A+",
       image: "/src/assets/image.png",
       description: "description",
       size: "-",
@@ -49,7 +45,6 @@ const Products = () => {
     {
       id: 5,
       name: "Turmeric Fingers",
-      grade: "Grade A",
       image: "https://m.media-amazon.com/images/I/81VyCoVem7L._UF1000,1000_QL80_.jpg",
       description: "description",
       size: "8-11 cm diameter",
@@ -60,7 +55,6 @@ const Products = () => {
     {
       id: 6,
       name: "Coming soon",
-      grade: "",
       image: "",
       description: "description",
       size: "9-12 cm diameter",
@@ -86,38 +80,7 @@ const Products = () => {
         </div>
 
         {/* Product Categories Filter */}
-        <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 sm:mb-10 md:mb-12">
-          <button 
-            className="px-4 py-2 sm:px-6 sm:py-3 rounded-full text-white font-semibold transition-all duration-300 transform hover:scale-105 text-sm sm:text-base"
-            style={{backgroundColor: '#2E7D32'}}
-          >
-            All Products
-          </button>
-          <button 
-            className="px-4 py-2 sm:px-6 sm:py-3 rounded-full border-2 transition-all duration-300 transform hover:scale-105 text-sm sm:text-base"
-            style={{borderColor: '#2E7D32', color: '#2E7D32'}}
-            onMouseEnter={(e) => {e.target.style.backgroundColor = '#2E7D32'; e.target.style.color = 'white';}}
-            onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent'; e.target.style.color = '#2E7D32';}}
-          >
-            Premium Grade
-          </button>
-          <button 
-            className="px-4 py-2 sm:px-6 sm:py-3 rounded-full border-2 transition-all duration-300 transform hover:scale-105 text-sm sm:text-base"
-            style={{borderColor: '#2E7D32', color: '#2E7D32'}}
-            onMouseEnter={(e) => {e.target.style.backgroundColor = '#2E7D32'; e.target.style.color = 'white';}}
-            onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent'; e.target.style.color = '#2E7D32';}}
-          >
-            Organic
-          </button>
-          <button 
-            className="px-4 py-2 sm:px-6 sm:py-3 rounded-full border-2 transition-all duration-300 transform hover:scale-105 text-sm sm:text-base"
-            style={{borderColor: '#2E7D32', color: '#2E7D32'}}
-            onMouseEnter={(e) => {e.target.style.backgroundColor = '#2E7D32'; e.target.style.color = 'white';}}
-            onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent'; e.target.style.color = '#2E7D32';}}
-          >
-            Large Size
-          </button>
-        </div>
+        
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-10 sm:mb-12 md:mb-16">
