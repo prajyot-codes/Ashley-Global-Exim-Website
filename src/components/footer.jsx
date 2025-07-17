@@ -15,6 +15,7 @@ const Footer = () => {
           backgroundSize: '60px 60px'
         }}></div>
       </div>
+      
 
       <div className="relative z-10">
         {/* Main footer content */}

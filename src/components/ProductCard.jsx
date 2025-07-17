@@ -91,6 +91,12 @@ const ProductCard = ({ product }) => {
           style={{backgroundColor: '#2E7D32'}}
           onMouseEnter={(e) => e.target.style.backgroundColor = '#5D4037'}
           onMouseLeave={(e) => e.target.style.backgroundColor = '#2E7D32'}
+          onClick={() => {
+            const contactSection = document.getElementById('contact');
+            if (contactSection) {
+              contactSection.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}
         >
          Get Quote
           {/* Get Quote /*for {product.name}*/ }

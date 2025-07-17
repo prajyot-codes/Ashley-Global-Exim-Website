@@ -31,32 +31,31 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 w-full overflow-x-hidden">
       <Navbar activeSection={activeSection} />
       
-      <main>
-        <section id="home">
+      <main className="w-full">
+        <section id="home" className="w-full">
           <Home />
         </section>
         
-        <section id="products">
+        <section id="products" className="w-full">
           <Products />
         </section>
 
-        <section id="about">
+        <section id="about" className="w-full">
           <About />
         </section>
         
-        
-        <section id="gallery">
+        <section id="gallery" className="w-full">
           <Gallery />
         </section>
         
-        <section id="testimonials">
+        <section id="testimonials" className="w-full">
           <Testimonials />
         </section>
         
-        <section id="contact">
+        <section id="contact" className="w-full">
           <Contact />
         </section>
       </main>

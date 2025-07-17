@@ -1,4 +1,6 @@
 import heroImg from '../assets/hero.jpg';
+import AnimatedSection from '../components/AnimatedSection';
+
 const Home = () => {
   return (
     <div className="min-h-screen">
@@ -6,7 +8,7 @@ const Home = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <img 
+          <img
             src={heroImg} 
             alt="Fresh pomegranates" 
             className="w-full h-full object-cover"
@@ -24,7 +26,7 @@ const Home = () => {
           </p>
           
           {/* Mission Statement */}
-          <div className="bg-yellow bg-opacity-10  rounded-2xl p-8 mb-8  ">
+          <div className="bg-yellow bg-opacity-10 rounded-2xl p-8 mb-8">
             <p className="text-2xl md:text-3xl font-semibold mb-4" style={{color: '#AED581'}}>
               "Our story, rooted in Quality"
             </p>
@@ -75,38 +77,55 @@ const Home = () => {
       </section>
 
       {/* Trust Indicators Section */}
-      <section className="py-16 bg-white">
+      <AnimatedSection className="py-16 bg-white" animation="up" delay={200}>
         <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#2E7D32]">Why Choose Ashley Global Exim?</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">Discover what makes us the trusted partner for premium Indian agricultural exports</p>
+          </div>
+          
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div className="p-6">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: '#AED581'}}>
-                <span className="text-2xl">🏆</span>
+            <div className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-scale-in">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110">
+                <img 
+                  src="https://images.unsplash.com/photo-1506806732259-39c2d0268443?w=200&h=200&fit=crop&crop=center"
+                  alt="Premium Quality" 
+                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                />
               </div>
               <h3 className="text-xl font-bold mb-2" style={{color: '#2E7D32'}}>Premium Quality</h3>
               <p className="text-gray-600">Hand-picked fresh fruits and vegetables from the finest farms across India</p>
             </div>
             
-            <div className="p-6">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: '#AED581'}}>
-                <span className="text-2xl">🚚</span>
+            <div className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-scale-in" style={{animationDelay: '0.2s'}}>
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110">
+                <img 
+                  src="https://images.unsplash.com/photo-1589820296151-5ad67cc7a3ad?w=200&h=200&fit=crop&crop=center"
+                  alt="Reliable Export" 
+                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                />
               </div>
               <h3 className="text-xl font-bold mb-2" style={{color: '#2E7D32'}}>Reliable Export</h3>
               <p className="text-gray-600">Timely delivery with proper cold chain maintenance</p>
             </div>
             
-            <div className="p-6">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: '#AED581'}}>
-                <span className="text-2xl">🌍</span>
+            <div className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-scale-in" style={{animationDelay: '0.4s'}}>
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110">
+                <img 
+                  src="https://images.unsplash.com/photo-1571867424488-7f8f01c27d87?w=200&h=200&fit=crop&crop=center"
+                  alt="Global Reach" 
+                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                />
               </div>
               <h3 className="text-xl font-bold mb-2" style={{color: '#2E7D32'}}>Global Reach</h3>
               <p className="text-gray-600">Serving international markets with excellence</p>
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Quick Stats */}
-      <section className="py-16" style={{backgroundColor: '#f8f9fa'}}>
+      <AnimatedSection className="py-16" style={{backgroundColor: '#f8f9fa'}} animation="up" delay={400}>
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
@@ -127,9 +146,10 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
     </div>
   );
 };
 
 export default Home;
+

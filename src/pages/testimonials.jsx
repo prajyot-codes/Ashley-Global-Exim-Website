@@ -81,10 +81,10 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto px-4">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6" style={{color: '#2E7D32'}}>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-slide-in-left" style={{color: '#2E7D32'}}>
             Client Testimonials
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8 animate-slide-in-right">
             Hear what our international clients say about our premium pomegranates and export services
           </p>
           <div className="w-24 h-1 mx-auto rounded-full" style={{backgroundColor: '#AED581'}}></div>

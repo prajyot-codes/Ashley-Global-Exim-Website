@@ -35,7 +35,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen py-8 sm:py-12 md:py-16 lg:py-20 bg-white">
+    <div className="min-h-screen py-8 sm:py-12 md:py-16 lg:py-20 bg-white w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="text-center mb-8 sm:mb-10 md:mb-12">
@@ -44,7 +44,7 @@ const Contact = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-[#2e7d32] ">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-[#2e7d32]">
             Let's Connect
           </h1>
           <p className="text-gray-600 text-base sm:text-lg md:text-xl max-w-2xl mx-auto leading-relaxed px-4">
@@ -53,15 +53,12 @@ const Contact = () => {
           <div className="w-16 sm:w-20 md:w-24 h-1 mx-auto mt-4 rounded-full bg-green-500 animate-pulse"></div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center">
-          {/* Contact Info Section */}
-          
-
-          {/* Contact Form Section */}
-          <div className="bg-white rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
+        <div className="flex justify-center items-center">
+          {/* Contact Form Section - Centered */}
+          <div className="w-full max-w-2xl bg-white rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
             {isSubmitted && (
               <div className="mb-6 p-4 bg-green-100 border border-green-200 rounded-lg flex items-center space-x-2 animate-bounce">
-                <svg className="w-5 h-5 bg-[#2e7d32]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-[#2e7d32]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                 </svg>
                 <span className="text-green-800 font-medium">Message sent successfully!</span>
