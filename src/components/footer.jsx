@@ -102,8 +102,8 @@ const Footer = () => {
                   </div>
                   <div>
                     <p className="text-gray-300 text-xs sm:text-sm">Location</p>
-                    <p className="text-white font-medium text-xs sm:text-sm">Khamgaon, Maharashtra, India
-                      Postal code: 444303
+                    <p className="text-white font-medium text-xs sm:text-sm">Mumbai, Maharashtra, india
+                      
                     </p>
                   </div>
                 </div>

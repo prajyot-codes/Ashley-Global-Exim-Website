@@ -83,7 +83,7 @@ const Home = () => {
                 <span className="text-2xl">🏆</span>
               </div>
               <h3 className="text-xl font-bold mb-2" style={{color: '#2E7D32'}}>Premium Quality</h3>
-              <p className="text-gray-600">Hand-picked pomegranates from the finest farms across India</p>
+              <p className="text-gray-600">Hand-picked fresh fruits and vegetables from the finest farms across India</p>
             </div>
             
             <div className="p-6">

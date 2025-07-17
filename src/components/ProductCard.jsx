@@ -36,13 +36,6 @@ const ProductCard = ({ product }) => {
             onError={() => setImageError(true)}
           />
         )}
-        {/* Grade Badge */}
-        <div 
-          className="absolute top-2 left-2 sm:top-4 sm:left-4 px-2 py-1 sm:px-3 sm:py-1 rounded-full text-white text-xs sm:text-sm font-semibold"
-          style={{backgroundColor: '#2E7D32'}}
-        >
-          {product.grade}
-        </div>
         {/* Overlay on hover */}
         <div 
           className={`absolute inset-0 bg-black transition-opacity duration-300 ${

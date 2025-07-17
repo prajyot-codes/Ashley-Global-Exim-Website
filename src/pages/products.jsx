@@ -96,30 +96,30 @@ const Products = () => {
               Quality Assurance
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-4">
-              Every pomegranate undergoes rigorous quality checks to ensure only the finest fruits reach international markets.
+              Every fruits and vegetables undergoes rigorous quality checks to ensure only the finest fruits reach international markets.
             </p>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
-            <div className="text-center">
+            <div className="text-center hover:scale-105 transition-transform duration-300 group ">
               <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-3 sm:mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: '#AED581'}}>
-                <span className="text-xl sm:text-2xl">🔍</span>
+                <span className="text-xl sm:text-2xl group-hover:rotate-12 transition-transform duration-300">🔍</span>
               </div>
               <h3 className="font-bold mb-2 text-sm sm:text-base" style={{color: '#2E7D32'}}>Visual Inspection</h3>
               <p className="text-gray-600 text-xs sm:text-sm px-2">Each fruit checked for size, color, and external defects</p>
             </div>
             
-            <div className="text-center">
+            <div className="text-center hover:scale-105 transition-transform duration-300 group">
               <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-3 sm:mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: '#AED581'}}>
-                <span className="text-xl sm:text-2xl">🧪</span>
+                <span className="text-xl sm:text-2xl group-hover:rotate-12 transition-transform duration-300">🧪</span>
               </div>
               <h3 className="font-bold mb-2 text-sm sm:text-base" style={{color: '#2E7D32'}}>Quality Testing</h3>
               <p className="text-gray-600 text-xs sm:text-sm px-2">Sugar content, acidity, and freshness tested</p>
             </div>
             
-            <div className="text-center">
+            <div className="text-center hover:scale-105 transition-transform duration-300 group">
               <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-3 sm:mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: '#AED581'}}>
-                <span className="text-xl sm:text-2xl">📦</span>
+                <span className="text-xl sm:text-2xl group-hover:rotate-12 transition-transform duration-300">📦</span>
               </div>
               <h3 className="font-bold mb-2 text-sm sm:text-base" style={{color: '#2E7D32'}}>Careful Packaging</h3>
               <p className="text-gray-600 text-xs sm:text-sm px-2">Temperature-controlled packaging for optimal freshness</p>
