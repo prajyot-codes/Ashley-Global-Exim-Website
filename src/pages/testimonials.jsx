@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import AnimatedSection from '../components/AnimatedSection';
 
 const Testimonials = () => {
   // Sample testimonial data
@@ -80,18 +81,18 @@ const Testimonials = () => {
     <div className="min-h-screen py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header Section */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-slide-in-left" style={{color: '#2E7D32'}}>
+        <AnimatedSection className="text-center mb-16" animation="up" delay={0}>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6" style={{color: '#2E7D32'}}>
             Client Testimonials
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8 animate-slide-in-right">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Hear what our international clients say about our premium pomegranates and export services
           </p>
           <div className="w-24 h-1 mx-auto rounded-full" style={{backgroundColor: '#AED581'}}></div>
-        </div>
+        </AnimatedSection>
 
         {/* Testimonial Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <AnimatedSection className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16" animation="up" delay={200}>
           {testimonials.map((testimonial) => (
             <div 
               key={testimonial.id} 
@@ -128,10 +129,10 @@ const Testimonials = () => {
               </div>
             </div>
           ))}
-        </div>
+        </AnimatedSection>
 
         {/* Call to Action */}
-        <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg text-center">
+        <AnimatedSection className="bg-white rounded-2xl p-8 md:p-12 shadow-lg text-center" animation="up" delay={400}>
           <h2 className="text-3xl font-bold mb-4" style={{color: '#2E7D32'}}>
             Join Our Satisfied Clients
           </h2>
@@ -146,7 +147,7 @@ const Testimonials = () => {
           >
             Request a Quote Today
           </button>
-        </div>
+        </AnimatedSection>
       </div>
     </div>
   );

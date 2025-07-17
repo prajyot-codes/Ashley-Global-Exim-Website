@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import AnimatedSection from '../components/AnimatedSection';
 
 const Contact = () => {
   const form = useRef();
@@ -38,7 +39,7 @@ const Contact = () => {
     <div className="min-h-screen py-8 sm:py-12 md:py-16 lg:py-20 bg-white w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
-        <div className="text-center mb-8 sm:mb-10 md:mb-12">
+        <AnimatedSection className="text-center mb-8 sm:mb-10 md:mb-12" animation="up" delay={0}>
           <div className="inline-block p-2 sm:p-3 rounded-full bg-[#2e7d32] mb-4">
             <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -51,9 +52,9 @@ const Contact = () => {
             We'd love to hear from you! Drop us a message and we'll get back to you as soon as possible.
           </p>
           <div className="w-16 sm:w-20 md:w-24 h-1 mx-auto mt-4 rounded-full bg-green-500 animate-pulse"></div>
-        </div>
+        </AnimatedSection>
 
-        <div className="flex justify-center items-center">
+        <AnimatedSection className="flex justify-center items-center" animation="up" delay={200}>
           {/* Contact Form Section - Centered */}
           <div className="w-full max-w-2xl bg-white rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
             {isSubmitted && (
@@ -156,7 +157,7 @@ const Contact = () => {
               </div>
             </form>
           </div>
-        </div>
+        </AnimatedSection>
       </div>
     </div>
   );

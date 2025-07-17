@@ -1,4 +1,5 @@
 import ProductCard from '../components/ProductCard';
+import AnimatedSection from '../components/AnimatedSection';
 
 const Products = () => {
   const products = [
@@ -68,29 +69,29 @@ const Products = () => {
     <div className="min-h-screen py-8 sm:py-12 md:py-16 lg:py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
-        <div className="text-center mb-10 sm:mb-12 md:mb-16">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 animate-slide-in-left" style={{color: '#2E7D32'}}>
+        <AnimatedSection className="text-center mb-10 sm:mb-12 md:mb-16" animation="up" delay={0}>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6" style={{color: '#2E7D32'}}>
             Our Premium Products
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-6 sm:mb-8 px-4 animate-slide-in-right">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-6 sm:mb-8 px-4">
             Discover our carefully curated selection of premium Indian agricultural produce 
             sourced directly from the finest farms and prepared for international export.
           </p>
           <div className="w-16 sm:w-20 md:w-24 h-1 mx-auto rounded-full" style={{backgroundColor: '#AED581'}}></div>
-        </div>
+        </AnimatedSection>
 
         {/* Product Categories Filter */}
         
 
         {/* Products Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-10 sm:mb-12 md:mb-16">
+        <AnimatedSection className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-10 sm:mb-12 md:mb-16" animation="up" delay={200}>
           {products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
-        </div>
+        </AnimatedSection>
 
         {/* Quality Assurance Section */}
-        <div className="bg-white rounded-2xl p-6 sm:p-8 md:p-12 shadow-lg">
+        <AnimatedSection className="bg-white rounded-2xl p-6 sm:p-8 md:p-12 shadow-lg" animation="up" delay={400}>
           <div className="text-center mb-6 sm:mb-8">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4" style={{color: '#2E7D32'}}>
               Quality Assurance
@@ -125,7 +126,7 @@ const Products = () => {
               <p className="text-gray-600 text-xs sm:text-sm px-2">Temperature-controlled packaging for optimal freshness</p>
             </div>
           </div>
-        </div>
+        </AnimatedSection>
       </div>
     </div>
   );
