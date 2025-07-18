@@ -26,8 +26,8 @@ const AnimatedSection = ({
       ref={ref}
       className={`${getAnimationClass()} ${isVisible ? 'animate' : ''} ${className}`}
       style={{ 
-        transitionDelay: `${delay}ms`,
-        animationDelay: `${delay}ms`
+        transitionDelay: `0.3ms`,
+        // animationDelay: `${delay}ms`
       }}
     >
       {children}
