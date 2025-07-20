@@ -15,10 +15,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_7mfeepd",
-        "template_g0etjl5", // office email template
+        "service_jyxcaf9",
+        "template_ezrszh9", // office email template
         form.current,
-        "R12Vjv3kiTBcTb34E"
+        "4O97sfjCOUIRwKREQ"
       )
       .then(
         (result) => {
