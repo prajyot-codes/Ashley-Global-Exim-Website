@@ -5,63 +5,53 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      name: "Premium Red Pomegranates",
+      name: "Pomegranate",
       image: "https://c8.alamy.com/comp/2ABMNAT/pomegranate-isolated-on-white-background-2ABMNAT.jpg",
-      description: "description",
-      size: "8-12 cm diameter",
-      weight: "250-400g per fruit",
-      packaging: "5kg/10kg corrugated boxes",
-      origin: "Vashi Market, Mumbai, India"
+      description: "Premium quality pomegranates with deep red arils, sweet-tart flavor, and excellent shelf life.",
+      size: "70mm & above",
+      weight: "Grade A Quality",
+      packaging: "Corrugated fiberboard boxes",
+      origin: "Solapur, Maharashtra"
     },
     {
       id: 2,
       name: "Turmeric Powder",
       image: "https://t4.ftcdn.net/jpg/04/72/24/73/360_F_472247342_JK2YdMdXnW4be8n0iAbxcqnc3X85EXKb.jpg",
-      description: "description",
-      size: "7-11 cm diameter",
-      weight: "200-350g per fruit",
-      packaging: "4kg/8kg ventilated cartons with moisture control",
-      origin: "Nashik, Maharashtra, India"
+      description: "Bright yellow to orange-yellow color. Curcumin content 2.5% to 5%. Max 8-10% moisture.",
+      size: "Fine Powder",
+      weight: "Various Packing",
+      packaging: "Laminated pouches, zip-lock bags, glass jars",
+      origin: "Hingoli, Waigaon, Maharashtra"
     },
     {
       id: 3,
-      name: "Onion",
+      name: "Red Onion",
       image: "https://img.freepik.com/premium-photo/fresh-red-onion-isolated-white-background_454083-21.jpg",
-      description: "description",
-      size: "5-7 cm diameter",
-      weight: "180-320g per fruit",
-      packaging: "3kg/6kg eco-friendly biodegradable boxes",
-      origin: "Pune, Maharashtra, India"
+      description: "Fresh red onions with firm texture, pungent flavor, and excellent storage life.",
+      size: "30mm & above",
+      weight: "Premium Grade",
+      packaging: "5kg, 10kg, 20kg mesh/jute bags",
+      origin: "Nashik, Maharashtra"
     },
     {
       id: 4,
       name: "Green Chilli",
       image: "/src/assets/image.png",
-      description: "description",
-      size: "-",
-      weight: "",
-      packaging: "Individual wrapping in 3kg/5kg premium boxes",
-      origin: "Solapur, Maharashtra, India"
+      description: "G4 or S-4 variety preferred. Fresh green chilies with moderate heat level and vibrant color.",
+      size: "8-12 cm (A Grade)",
+      weight: "Export Quality",
+      packaging: "2kg/5kg/7kg boxes with inner liner",
+      origin: "Kolhapur, Maharashtra"
     },
     {
       id: 5,
       name: "Turmeric Fingers",
       image: "https://m.media-amazon.com/images/I/81VyCoVem7L._UF1000,1000_QL80_.jpg",
-      description: "description",
-      size: "8-11 cm diameter",
-      weight: "220-380g per fruit",
-      packaging: "6kg/12kg industrial packaging with dividers",
-      origin: "Aurangabad, Maharashtra, India"
-    },
-    {
-      id: 6,
-      name: "Coming soon",
-      image: "",
-      description: "description",
-      size: "9-12 cm diameter",
-      weight: "250-420g per fruit",
-      packaging: "",
-      origin: ""
+      description: "Salem, Rajapuri, Erode varieties. Curcumin 2.5-3.5%, moisture <10%.",
+      size: "Premium Variety",
+      weight: "Selected Grade",
+      packaging: "25kg PP or jute bags",
+      origin: "Maharashtra, India"
     }
   ];
 
@@ -84,11 +74,13 @@ const Products = () => {
         
 
         {/* Products Grid */}
-        <AnimatedSection className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-10 sm:mb-12 md:mb-16" animation="up" delay={200}>
-          {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-10 sm:mb-12 md:mb-16">
+          {products.map((product, index) => (
+            <AnimatedSection key={product.id} animation="up" delay={200 + (index * 100)}>
+              <ProductCard product={product} />
+            </AnimatedSection>
           ))}
-        </AnimatedSection>
+        </div>
 
         {/* Quality Assurance Section */}
         <AnimatedSection className="bg-white rounded-2xl p-6 sm:p-8 md:p-12 shadow-lg" animation="up" delay={400}>

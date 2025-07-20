@@ -316,3 +316,11 @@ section {
 ::-webkit-scrollbar-button:single-button:vertical:increment {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M7 8l5 8 5-8z'/%3E%3C/svg%3E");
 }
+
+/* Line clamp utility classes */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
