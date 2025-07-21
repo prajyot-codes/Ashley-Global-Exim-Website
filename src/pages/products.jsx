@@ -7,7 +7,7 @@ const Products = () => {
       id: 1,
       name: "Pomegranate",
       image: "https://c8.alamy.com/comp/2ABMNAT/pomegranate-isolated-on-white-background-2ABMNAT.jpg",
-      description: "Premium quality pomegranates with deep red arils, sweet-tart flavor, and excellent shelf life.",
+      description: "Premium quality pomegranates with deep red arils, sweet-tart flavor, and excellent shelf life. weight- 400gm",
       size: "70mm & above",
       weight: "Grade A Quality",
       packaging: "Corrugated fiberboard boxes",

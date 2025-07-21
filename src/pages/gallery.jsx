@@ -4,6 +4,7 @@ import AnimatedSection from '../components/AnimatedSection';
 const Gallery = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  // Product Showcase for slider
   const productShowcase = [
     {
       id: 1,
@@ -23,17 +24,19 @@ const Gallery = () => {
     }
   ];
 
+  // Slider logic
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % productShowcase.length);
-    }, 3000);
+    }, 3000); // Change image every 3 seconds
 
     return () => clearInterval(interval);
   }, [productShowcase.length]);
 
+
   return (
-    <div className="min-h-screen bg-white">
-      {/* Header Section */}
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-green-50">
+      {/* Header Section - Centered with container */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
         <AnimatedSection className="text-center mb-6 md:mb-8" animation="up" delay={0}>
           <div className="mb-4">
@@ -54,47 +57,30 @@ const Gallery = () => {
       </div>
 
       {/* Full-width Image Slider */}
-      <AnimatedSection className="w-full" animation="up" delay={1000}>
-        <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[28rem] xl:h-[45rem] overflow-hidden bg-white rounded-none">
-          
-          {/* Image Slides */}
+      <AnimatedSection className="w-full" animation="up" delay={300}>
+        <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[28rem] xl:h-[45rem] overflow-hidden bg-gray-100">
           {productShowcase.map((product, index) => (
             <div
               key={product.id}
               className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
-                index === currentSlide
-                  ? 'opacity-100 transform scale-100'
+                index === currentSlide 
+                  ? 'opacity-100 transform scale-100' 
                   : 'opacity-0 transform scale-110'
               }`}
             >
               <img
                 src={product.image}
-                alt=""
+                alt={product.title}
                 className="w-full h-full object-cover object-center"
               />
+              {/* Dark gradient overlay for that blackish effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/70" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/50" />
+              
+              {/* Content overlay - responsive positioning */}
+
             </div>
           ))}
-
-          {/* Bottom fade - less intense */}
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white/50 z-10 pointer-events-none"></div>
-
-          {/* Optional top fade — also reduced if you want */}
-          {/* <div className="absolute inset-0 bg-gradient-to-t from-transparent to-white/50 z-10 pointer-events-none"></div> */}
-
-          {/* Slide indicators */}
-          <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 md:bottom-8 md:right-8 flex space-x-2 z-20">
-            {productShowcase.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentSlide(index)}
-                className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
-                  index === currentSlide
-                    ? 'bg-gray-800 shadow-lg'
-                    : 'bg-gray-300 hover:bg-gray-400'
-                }`}
-              />
-            ))}
-          </div>
         </div>
       </AnimatedSection>
     </div>
