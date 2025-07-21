@@ -10,25 +10,25 @@ const Gallery = () => {
       id: 1,
       title: 'Premium Pomegranates',
       location: 'Maharashtra, India',
-      image: 'https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?w=800&h=400&fit=crop&crop=center'
+      image: 'https://res.cloudinary.com/doks3r7lu/image/upload/v1753099580/WhatsApp_Image_2025-07-18_at_21.32.49_f2c5c3be_jssfty.jpg'
     },
     {
       id: 2,
       title: 'Fresh Red Onions',
       location: 'Gujarat, India',
-      image: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=800&h=400&fit=crop&crop=center'
+      image: 'https://res.cloudinary.com/doks3r7lu/image/upload/v1753099579/WhatsApp_Image_2025-07-18_at_21.32.49_d99f31e8_tu20gx.jpg'
     },
     {
       id: 3,
       title: 'Quality Turmeric',
       location: 'Karnataka, India',
-      image: 'https://images.unsplash.com/photo-1609501676725-7186f970e4d8?w=800&h=400&fit=crop&crop=center'
+      image: 'https://res.cloudinary.com/doks3r7lu/image/upload/v1753099579/WhatsApp_Image_2025-07-18_at_21.32.49_53112160_bysdff.jpg'
     },
     {
       id: 4,
       title: 'Green Chilies',
       location: 'Andhra Pradesh, India',
-      image: 'https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=800&h=400&fit=crop&crop=center'
+      image: 'https://res.cloudinary.com/doks3r7lu/image/upload/v1753099579/WhatsApp_Image_2025-07-18_at_21.32.48_4dc7a0c9_s9hgfn.jpg'
     }
   ];
 
