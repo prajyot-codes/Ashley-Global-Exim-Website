@@ -100,7 +100,7 @@ const Home = () => {
             <div className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-scale-in" style={{animationDelay: '0.2s'}}>
               <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110">
                 <img 
-                  src="https://images.unsplash.com/photo-1589820296151-5ad67cc7a3ad?w=200&h=200&fit=crop&crop=center"
+                  src="https://res.cloudinary.com/doks3r7lu/image/upload/v1753159970/about-gng_boh1lx.png"
                   alt="Reliable Export" 
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
@@ -112,7 +112,7 @@ const Home = () => {
             <div className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-scale-in" style={{animationDelay: '0.4s'}}>
               <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110">
                 <img 
-                  src="https://images.unsplash.com/photo-1571867424488-7f8f01c27d87?w=200&h=200&fit=crop&crop=center"
+                  src="https://res.cloudinary.com/doks3r7lu/image/upload/v1753160301/character-illustration-people-with-global-network-concept_53876-66147_sxurvg.avif"
                   alt="Global Reach" 
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />

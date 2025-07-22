@@ -80,7 +80,7 @@ const About = () => {
                   <div className="bg-gray-50 rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 min-h-[140px] flex flex-col">
                     <h3 className="font-bold text-lg sm:text-xl mb-3 text-left" style={{ color: '#2E7D32' }}>The Beginning</h3>
                     <p className="text-gray-700 text-sm sm:text-base leading-relaxed text-justify flex-grow">
-                      Ashley Global Exim was established by Yash Ingle (Founder) and Om Kumar Dhanorkar (Co-Founder) with a clear mission: to deliver high-quality Indian agricultural products to global markets. Started with exports of fresh vegetables to the UAE and the UK.
+                      Ashley Global Exim was established by Yash Ingle (Founder) and Omkumar Dhanorkar (Co-Founder) with a clear mission: to deliver high-quality Indian agricultural products to global markets. Started with exports of fresh vegetables to the UAE and the UK.
                     </p>
                   </div>
                 </div>
@@ -127,7 +127,7 @@ const About = () => {
                       2023
                     </div>
                     <div className="w-32 h-32 lg:w-40 lg:h-40 rounded-full overflow-hidden border-4 border-[#AED581] shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-110">
-                      <img src="https://images.unsplash.com/photo-1586281010691-3d8eb00eabb6?w=300&h=300&fit=crop&crop=center" alt="Industrial growth" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
+                      <img src="https://res.cloudinary.com/doks3r7lu/image/upload/v1753160598/container-ship-import-export-port-against-beautiful-morning-l-light-loading-yard-use-freight-cargo-shipping-58151836_wwgufm.webp" alt="Industrial growth" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
                     </div>
                   </div>
                 </div>
@@ -139,7 +139,7 @@ const About = () => {
                 <div className="ml-12 sm:ml-16 flex-1">
                   <div className="flex items-center space-x-3 mb-4">
                     <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-[#AED581] shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-110">
-                      <img src="https://images.unsplash.com/photo-1586281010691-3d8eb00eabb6?w=300&h=300&fit=crop&crop=center" alt="Industrial growth" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
+                      <img src="https://res.cloudinary.com/doks3r7lu/image/upload/v1753160598/container-ship-import-export-port-against-beautiful-morning-l-light-loading-yard-use-freight-cargo-shipping-58151836_wwgufm.webp" alt="Industrial growth" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
                     </div>
                     <div className="bg-gradient-to-r from-[#AED581] to-[#2E7D32] text-white px-4 py-2 rounded-full inline-block font-bold text-sm shadow-lg hover:shadow-xl transition-all duration-300">
                       2023
@@ -162,7 +162,7 @@ const About = () => {
                 <div className="w-5/12 text-right pr-8">
                   <div className="flex items-center justify-end space-x-4 mb-4">
                     <div className="w-32 h-32 lg:w-40 lg:h-40 rounded-full overflow-hidden border-4 border-[#AED581] shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-110">
-                      <img src="https://images.unsplash.com/photo-1569163139394-de4e4f43e4e3?w=300&h=300&fit=crop&crop=center" alt="Global export" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
+                      <img src="https://res.cloudinary.com/doks3r7lu/image/upload/v1753160761/360_F_241951583_x3Pn4HbvGKfbdvVd43jKluTYB9IaXz1K_jiisrr.jpg" alt="Global export" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
                     </div>
                     <div className="bg-gradient-to-r from-[#AED581] to-[#2E7D32] text-white px-6 py-3 rounded-full inline-block font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300">
                       2024
@@ -189,7 +189,7 @@ const About = () => {
                 <div className="ml-12 sm:ml-16 flex-1">
                   <div className="flex items-center space-x-3 mb-4">
                     <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-[#AED581] shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-110">
-                      <img src="https://images.unsplash.com/photo-1569163139394-de4e4f43e4e3?w=300&h=300&fit=crop&crop=center" alt="Global export" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
+                      <img src="https://res.cloudinary.com/doks3r7lu/image/upload/v1753160761/360_F_241951583_x3Pn4HbvGKfbdvVd43jKluTYB9IaXz1K_jiisrr.jpg" alt="Global export" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
                     </div>
                     <div className="bg-gradient-to-r from-[#AED581] to-[#2E7D32] text-white px-4 py-2 rounded-full inline-block font-bold text-sm shadow-lg hover:shadow-xl transition-all duration-300">
                       2024
@@ -282,7 +282,7 @@ const About = () => {
               <img src={founder} alt="Founder" className="w-full h-full object-cover" />
             </div>
             <h3 className="text-xl font-bold mb-1" style={{ color: '#2E7D32' }}>Yash Ingle</h3>
-            <p className="text-gray-700 mb-2 font-medium">Founder & CEO</p>
+            <p className="text-gray-700 mb-2 font-medium">Founder</p>
             <p className="text-gray-600 text-center text-sm">Visionary leader with a passion for quality and global trade. Driving force behind Ashley Global Exim's growth and reputation.</p>
           </div>
           {/* Co-Founder */}
@@ -292,7 +292,7 @@ const About = () => {
               <img src={cofounder} alt="Co-Founder" className="w-full h-full object-cover" />
             </div>
             <h3 className="text-xl font-bold mb-1" style={{ color: '#2E7D32' }}>Omkumar Dhanorkar</h3>
-            <p className="text-gray-700 mb-2 font-medium">Co-Founder & Director</p>
+            <p className="text-gray-700 mb-2 font-medium">Co-Founder</p>
             <p className="text-gray-600 text-center text-sm">Expert in international business and logistics, ensuring seamless export operations and customer satisfaction worldwide.</p>
           </div>
         </div>
