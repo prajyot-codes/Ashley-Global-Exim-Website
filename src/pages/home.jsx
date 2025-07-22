@@ -129,8 +129,8 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold mb-2" style={{color: '#2E7D32'}}>10,000+</div>
-              <div className="text-gray-600">Kg Exported (2024)</div>
+              <div className="text-3xl font-bold mb-2" style={{color: '#2E7D32'}}>200+</div>
+              <div className="text-gray-600">Containers Exported (2024)</div>
             </div>
             <div>
               <div className="text-3xl font-bold mb-2" style={{color: '#2E7D32'}}>15+</div>

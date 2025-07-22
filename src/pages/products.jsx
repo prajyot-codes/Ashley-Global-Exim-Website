@@ -36,7 +36,7 @@ const Products = () => {
     {
       id: 4,
       name: "Green Chilli",
-      image: "/src/assets/image.png",
+      image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753161022/WhatsApp_Image_2025-07-22_at_10.39.59_37753561_upzu5k.jpg",
       description: "G4 or S-4 variety preferred. Fresh green chilies with moderate heat level and vibrant color.",
       size: "8-12 cm (A Grade)",
       weight: "Export Quality",
