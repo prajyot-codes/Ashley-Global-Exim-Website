@@ -21,6 +21,14 @@ const Gallery = () => {
     {
       id: 4,
       image: 'https://res.cloudinary.com/doks3r7lu/image/upload/v1753099579/WhatsApp_Image_2025-07-18_at_21.32.48_4dc7a0c9_s9hgfn.jpg'
+    },
+    {
+      id: 5,
+      image: 'src/assets/farmer.jpg'
+    },
+    {
+      id: 6,
+      image: 'src/assets/farmer2.jpg' // Placeholder, update with actual image path
     }
   ];
 

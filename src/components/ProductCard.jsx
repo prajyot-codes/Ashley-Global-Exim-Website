@@ -20,7 +20,7 @@ const ProductCard = ({ product }) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Image Container */}
-      <div className="relative overflow-hidden h-48 sm:h-56 md:h-64">
+      <div className="relative overflow-hidden h-55 sm:h-70 md:h-100">
         {imageError ? (
           <div className="w-full h-full flex items-center justify-center bg-gray-200">
             <span className="text-gray-500 text-sm">Image not available</span>
