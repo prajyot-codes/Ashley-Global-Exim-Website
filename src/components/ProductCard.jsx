@@ -62,10 +62,10 @@ const ProductCard = ({ product }) => {
             <span className="text-xs font-medium block mb-1" style={{color: '#5D4037'}}>SIZE</span>
             <p className="text-sm font-semibold text-gray-800 min-h-[1.25rem]">{product.size}</p>
           </div>
-          <div className="bg-gray-50 p-3 rounded-lg">
-            <span className="text-xs font-medium block mb-1" style={{color: '#5D4037'}}>GRADE</span>
+          {product.weight && (<div className="bg-gray-50 p-3 rounded-lg">
+            <span className="text-xs font-medium block mb-1" style={{color: '#5D4037'}}>Weight</span>
             <p className="text-sm font-semibold text-gray-800 min-h-[1.25rem]">{product.weight}</p>
-          </div>
+          </div>)}
         </div>
 
         {/* Packaging Info */}

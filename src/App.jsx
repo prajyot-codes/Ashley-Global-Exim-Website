@@ -10,6 +10,7 @@ import Testimonials from './pages/testimonials'
 import Contact from './pages/contact'
 
 function App() {
+
   const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {

@@ -6,60 +6,55 @@ const Products = () => {
     {
       id: 1,
       name: "Pomegranate",
-      image: "src/assets/pomegranate.jpg",
-      description: "Premium quality pomegranates with deep red arils, sweet-tart flavor, and excellent shelf life. weight- 400gm",
+      image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753293956/pomegranate_v6mlnz.jpg",
+      description: "Premium quality pomegranates with deep red arils, sweet-tart flavor, and excellent shelf life.",
       size: "70mm & above",
-      weight: "Grade A Quality",
+      weight: "400gm",
       packaging: "Corrugated fiberboard boxes",
       origin: "Solapur, Maharashtra"
     },
     {
       id: 2,
       name: "Turmeric Powder",
-      image: "src/assets/turmericpowder.jpg",
+      image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753293956/turmericpowder_r5b3zr.jpg",
       description: "Bright yellow to orange-yellow color. Curcumin content 2.5% to 5%. Max 8-10% moisture.",
       size: "Fine Powder",
-      weight: "Various Packing",
       packaging: "Laminated pouches, zip-lock bags, glass jars",
       origin: "Hingoli, Waigaon, Maharashtra"
     },
     {
       id: 3,
       name: "Red Onion",
-      image: "src/assets/onion.jpg",
+      image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753293959/onion_lkws87.jpg",
       description: "Fresh red onions with firm texture, pungent flavor, and excellent storage life.",
       size: "30mm & above",
-      weight: "Premium Grade",
       packaging: "5kg, 10kg, 20kg mesh/jute bags",
       origin: "Nashik, Maharashtra"
     },
     {
       id: 4,
       name: "Green Chilli",
-      image: "src/assets/greenchilli.jpg",
+      image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753293958/greenchilli_e4yxr1.jpg",
       description: "G4 or S-4 variety preferred. Fresh green chilies with moderate heat level and vibrant color.",
       size: "8-12 cm (A Grade)",
-      weight: "Export Quality",
       packaging: "2kg/5kg/7kg boxes with inner liner",
       origin: "Kolhapur, Maharashtra"
     },
     {
       id: 5,
       name: "Turmeric Fingers",
-      image: "src/assets/turmeric.jpg",
+      image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753293958/turmeric_chs8mm.jpg",
       description: "Salem, Rajapuri, Erode varieties. Curcumin 2.5-3.5%, moisture <10%.",
-      size: "Premium Variety",
-      weight: "Selected Grade",
+      size: "Longest Fingers",
       packaging: "25kg PP or jute bags",
       origin: "Maharashtra, India"
     },
     {
       id: 6,
       name: "Multani Mitti",
-      image: "src/assets/multanimitti.jpg", // update as per your image file
+      image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753293954/multanimitti_sjv40i.jpg", // update as per your image file
       description: "Usage: Cosmetic, beauty, pharmaceutical, industrial.",
       size: "Bulk Export",
-      weight: "25 kg / 50 kg",
       packaging: "HDPE bags",
       origin: "Rajasthan, India"
     },
@@ -69,7 +64,6 @@ const Products = () => {
       image: "src/assets/coffee.jpg", // update as per your image file
       description: "Standard export pack. 60 kg or 50 kg per bag. Used for bulk green coffee exports.",
       size: "Arabica & Robusta",
-      weight: "",
       packaging: "Traditional Jute Bags",
       origin: "India"
     },
