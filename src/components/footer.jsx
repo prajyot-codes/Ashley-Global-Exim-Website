@@ -33,7 +33,7 @@ const Footer = () => {
                 </div>
               </div>
               <p className="text-gray-300 mb-4 sm:mb-6 max-w-md leading-relaxed text-sm sm:text-base">
-                Your trusted partner for premium quality Indian agricultural exports. We specialize in fresh pomegranates and deliver excellence to international markets worldwide.
+                Your trusted partner for premium Indian agri-exports — delivering top-grade Pomegranates, Turmeric, Tomatoes, Coffee, Multani Mitti, Green Chilli, and Red Onions to global markets with unmatched quality.
               </p>
 
               {/* Trust badges */}

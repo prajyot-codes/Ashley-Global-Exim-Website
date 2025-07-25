@@ -174,7 +174,7 @@ const About = () => {
                   <div className="bg-gray-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 min-h-[140px] flex flex-col">
                     <h3 className="font-bold text-xl mb-3 text-left" style={{ color: '#2E7D32' }}>Global Growth & Diversification</h3>
                     <ul className="text-gray-700 leading-relaxed space-y-2 text-justify flex-grow">
-                      <li>• Expanded exports to over 20 countries across Europe, Middle East, and Southeast Asia</li>
+                      <li>• Expanded exports to over 15 countries across Europe, Middle East, and Southeast Asia</li>
                       <li>• Introduced new product categories: fruits, spices, and grains</li>
                       <li>• Strengthened logistics with advanced cold chain solutions</li>
                       <li>• Participated in international trade expos and built strategic alliances</li>
@@ -198,7 +198,7 @@ const About = () => {
                   <div className="bg-gray-50 rounded-2xl p-4 shadow-lg">
                     <h3 className="font-bold text-lg mb-3" style={{ color: '#2E7D32' }}>Global Growth & Diversification</h3>
                     <ul className="text-gray-700 text-sm leading-relaxed space-y-1">
-                      <li>• Expanded exports to over 20 countries</li>
+                      <li>• Expanded exports to over 15 countries</li>
                       <li>• Introduced new product categories</li>
                       <li>• Strengthened logistics with cold chain solutions</li>
                       <li>• Participated in international trade expos</li>
