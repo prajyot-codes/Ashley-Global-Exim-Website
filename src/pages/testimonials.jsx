@@ -6,64 +6,37 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Ahmed Al-Mansour",
-      company: "Fresh Fruits Trading LLC",
+      name: " Azeem Shams",
       location: "Dubai, UAE",
-      flag: "🇦🇪",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
-      quote: "Ashley Global Exim has been our trusted supplier for premium pomegranates for over three years. Their consistent quality and reliable shipping have made them our preferred Indian exporter.",
+      quote: "I’ve been importing fresh fruits and vegetables for years, and working with Ashley Global Exim has been one of the smoothest experiences. Their pomegranates are always fresh, properly packed, and delivered on time. Reliable and professional team.",
       rating: 5
     },
     {
       id: 2,
-      name: "Fatima Al-Qasimi",
-      company: "Royal Gourmet Imports",
-      location: "Abu Dhabi, UAE",
-      flag: "🇦🇪",
+      name: "Noah Mitchel",
+      location: "Manchester, UK",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
-      quote: "The pomegranates we receive from Ashley Global are consistently of the highest grade. Our customers specifically ask for their produce by name, which speaks volumes about their quality.",
+      quote: "Their green chillies are a big hit with our customers. Crisp, spicy, and well-packed. What stands out is their attention to detail and willingness to adapt to our needs. Kudos to the team at Ashley Global.",
       rating: 5
     },
     {
       id: 3,
-      name: "Hassan Mahmoud",
-      company: "Mahmoud Brothers Trading",
-      location: "Riyadh, Saudi Arabia",
-      flag: "🇸🇦",
+      name: " Ahmed Al-Farsi",
+      location: "Muscat, Oman",
       image: "https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
-      quote: "We've tried many suppliers, but Ashley Global Exim stands out for their attention to packaging and temperature control. The fruits arrive in perfect condition despite the long journey.",
+      quote: "From documentation to delivery, Ashley Global Exim made the export process very smooth. We’ve imported both pomegranates and onions from them, and they’ve maintained excellent quality and professionalism each time.",
       rating: 4
     },
     {
       id: 4,
-      name: "Mei Lin",
-      company: "Eastern Delights",
-      location: "Singapore",
+      name: "Loghmam Ghaderi",
+      location: "Tehran, Iran",
       flag: "🇸🇬",
       image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
-      quote: "Our high-end restaurant chain requires only the best ingredients. Ashley Global's pomegranates exceed our expectations in taste, appearance, and shelf life.",
+      quote: "We recently received a large consignment of pomegranates from Ashley Global Exim. The quality exceeded our expectations – vibrant color, great taste, and perfect packing. Will definitely continue working with them.",
       rating: 5
     },
-    {
-      id: 5,
-      name: "Mohammed Al-Farsi",
-      company: "Gulf Premium Foods",
-      location: "Kuwait City, Kuwait",
-      flag: "🇰🇼",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
-      quote: "Working with Ashley Global Exim has simplified our import process. Their documentation is always in order, and their team is highly responsive to our needs.",
-      rating: 4
-    },
-    {
-      id: 6,
-      name: "Saeed Al-Jabri",
-      company: "Oman Fresh Produce",
-      location: "Muscat, Oman",
-      flag: "🇴🇲",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
-      quote: "The organic pomegranates from Ashley Global have helped us develop a niche market in Oman. Their commitment to quality and sustainability aligns perfectly with our brand values.",
-      rating: 5
-    }
   ];
 
   // Function to render star ratings
