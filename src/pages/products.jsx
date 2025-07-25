@@ -9,7 +9,7 @@ const Products = () => {
       image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753293956/pomegranate_v6mlnz.jpg",
       description: "Premium quality pomegranates with deep red arils, sweet-tart flavor, and excellent shelf life.",
       size: "70mm & above",
-      weight: "400gm",
+      weight: "200gm",
       packaging: "Corrugated fiberboard boxes",
       origin: "Solapur, Maharashtra"
     },
@@ -38,7 +38,7 @@ const Products = () => {
       description: "G4 or S-4 variety preferred. Fresh green chilies with moderate heat level and vibrant color.",
       size: "8-12 cm (A Grade)",
       packaging: "2kg/5kg/7kg boxes with inner liner",
-      origin: "Kolhapur, Maharashtra"
+      origin: " Buldhana, Haveri, Kolhapur Maharashtra"
     },
     {
       id: 5,
@@ -61,7 +61,7 @@ const Products = () => {
     {
       id: 7,
       name: "Coffee (Arabica & Robusta)",
-      image: "src/assets/coffee.jpg", // update as per your image file
+      image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753426421/WhatsApp_Image_2025-07-25_at_12.19.49_77dd0591_c10zti.jpg", // update as per your image file
       description: "Standard export pack. 60 kg or 50 kg per bag. Used for bulk green coffee exports.",
       size: "Arabica & Robusta",
       packaging: "Traditional Jute Bags",
@@ -70,8 +70,8 @@ const Products = () => {
     {
       id: 8,
       name: "Tomato",
-      image: "src/assets/tomato.jpg", // update as per your image file
-      description: "",
+      image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753426423/WhatsApp_Image_2025-07-25_at_12.19.09_43e88e2c_yw5amt.jpg", // update as per your image file
+      description: "Abhinav, Namdhari, Arka Abhijith, and Arka Vikas varieties.",
       size: "55mm and above",
       weight: "5kg, 7kg, 10kg",
       packaging: "Corrugated Boxes, Wax or laminated Boxes",
