@@ -1,4 +1,4 @@
-import heroImg from '../assets/hero.jpg';
+import heroImg from '../assets/hero.webp';
 import AnimatedSection from '../components/AnimatedSection';
 
 const Home = () => {
@@ -100,7 +100,7 @@ const Home = () => {
             <div className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-scale-in" style={{animationDelay: '0.2s'}}>
               <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110">
                 <img 
-                  src="https://res.cloudinary.com/doks3r7lu/image/upload/v1753159970/about-gng_boh1lx.png"
+                  src="https://res.cloudinary.com/doks3r7lu/image/upload/v1753786838/about-gng_boh1lx_t4raow.webp"
                   alt="Reliable Export" 
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />

@@ -1,5 +1,5 @@
-import founder from "../assets/founder.jpg"
-import cofounder from "../assets/cofounder.jpg"
+import founder from "../assets/founder.webp"
+import cofounder from "../assets/cofounder.webp"
 import AnimatedSection from '../components/AnimatedSection';
 
 const About = () => {

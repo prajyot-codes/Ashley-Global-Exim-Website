@@ -6,7 +6,7 @@ const Products = () => {
     {
       id: 1,
       name: "Pomegranate",
-      image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753293956/pomegranate_v6mlnz.jpg",
+      image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753786838/pomegranate_v6mlnz_thaxao.webp",
       description: "Premium quality pomegranates with deep red arils, sweet-tart flavor, and excellent shelf life.",
       size: "70mm & above",
       weight: "200gm",
@@ -16,7 +16,7 @@ const Products = () => {
     {
       id: 2,
       name: "Turmeric Powder",
-      image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753293956/turmericpowder_r5b3zr.jpg",
+      image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753786837/turmericpowder_r5b3zr_e8zssh.webp",
       description: "Bright yellow to orange-yellow color. Curcumin content 2.5% to 5%. Max 8-10% moisture.",
       size: "Fine Powder",
       packaging: "Laminated pouches, zip-lock bags, glass jars",
@@ -25,7 +25,7 @@ const Products = () => {
     {
       id: 3,
       name: "Red Onion",
-      image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753293959/onion_lkws87.jpg",
+      image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753786837/onion_lkws87_f1evi3.webp",
       description: "Fresh red onions with firm texture, pungent flavor, and excellent storage life.",
       size: "30mm & above",
       packaging: "5kg, 10kg, 20kg mesh/jute bags",
@@ -34,7 +34,7 @@ const Products = () => {
     {
       id: 4,
       name: "Green Chilli",
-      image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753293958/greenchilli_e4yxr1.jpg",
+      image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753786839/greenchilli_e4yxr1_wiln9n.webp",
       description: "G4 or S-4 variety preferred. Fresh green chilies with moderate heat level and vibrant color.",
       size: "8-12 cm (A Grade)",
       packaging: "2kg/5kg/7kg boxes with inner liner",
@@ -43,7 +43,7 @@ const Products = () => {
     {
       id: 5,
       name: "Turmeric Fingers",
-      image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753293958/turmeric_chs8mm.jpg",
+      image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753786837/turmeric_chs8mm_lvlzmx.webp",
       description: "Salem, Rajapuri, Erode varieties. Curcumin 2.5-3.5%, moisture <10%.",
       size: "Longest Fingers",
       packaging: "25kg PP or jute bags",
@@ -52,7 +52,7 @@ const Products = () => {
     {
       id: 6,
       name: "Multani Mitti",
-      image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753293954/multanimitti_sjv40i.jpg", // update as per your image file
+      image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753786838/multanimitti_sjv40i_ig8th9.webp", // update as per your image file
       description: "Usage: Cosmetic, beauty, pharmaceutical, industrial.",
       size: "Bulk Export",
       packaging: "HDPE bags",
@@ -61,7 +61,7 @@ const Products = () => {
     {
       id: 7,
       name: "Coffee (Arabica & Robusta)",
-      image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753426421/WhatsApp_Image_2025-07-25_at_12.19.49_77dd0591_c10zti.jpg", // update as per your image file
+      image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753786837/WhatsApp_Image_2025-07-25_at_12.19.49_77dd0591_c10zti_bi3zra.webp", // update as per your image file
       description: "Standard export pack. 60 kg or 50 kg per bag. Used for bulk green coffee exports.",
       size: "Arabica & Robusta",
       packaging: "Traditional Jute Bags",
@@ -70,7 +70,7 @@ const Products = () => {
     {
       id: 8,
       name: "Tomato",
-      image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753426423/WhatsApp_Image_2025-07-25_at_12.19.09_43e88e2c_yw5amt.jpg", // update as per your image file
+      image: "https://res.cloudinary.com/doks3r7lu/image/upload/v1753786837/WhatsApp_Image_2025-07-25_at_12.19.09_43e88e2c_yw5amt_lup41y.webp", // update as per your image file
       description: "Abhinav, Namdhari, Arka Abhijith, and Arka Vikas varieties.",
       size: "55mm and above",
       weight: "5kg, 7kg, 10kg",
