@@ -127,7 +127,7 @@ const About = () => {
                       2023
                     </div>
                     <div className="w-32 h-32 lg:w-40 lg:h-40 rounded-full overflow-hidden border-4 border-[#AED581] shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-110">
-                      <img src="https://res.cloudinary.com/doks3r7lu/image/upload/v1753160598/container-ship-import-export-port-against-beautiful-morning-l-light-loading-yard-use-freight-cargo-shipping-58151836_wwgufm.webp" alt="Industrial growth" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
+                      <img src="https://res.cloudinary.com/doks3r7lu/image/upload/v1754404458/download_2_p3byka.webp" alt="Industrial growth" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
                     </div>
                   </div>
                 </div>
@@ -139,7 +139,7 @@ const About = () => {
                 <div className="ml-12 sm:ml-16 flex-1">
                   <div className="flex items-center space-x-3 mb-4">
                     <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-[#AED581] shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-110">
-                      <img src="https://res.cloudinary.com/doks3r7lu/image/upload/v1753160598/container-ship-import-export-port-against-beautiful-morning-l-light-loading-yard-use-freight-cargo-shipping-58151836_wwgufm.webp" alt="Industrial growth" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
+                      <img src="https://res.cloudinary.com/doks3r7lu/image/upload/v1754404458/download_2_p3byka.webp" alt="Industrial growth" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
                     </div>
                     <div className="bg-gradient-to-r from-[#AED581] to-[#2E7D32] text-white px-4 py-2 rounded-full inline-block font-bold text-sm shadow-lg hover:shadow-xl transition-all duration-300">
                       2023
@@ -162,7 +162,7 @@ const About = () => {
                 <div className="w-5/12 text-right pr-8">
                   <div className="flex items-center justify-end space-x-4 mb-4">
                     <div className="w-32 h-32 lg:w-40 lg:h-40 rounded-full overflow-hidden border-4 border-[#AED581] shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-110">
-                      <img src="https://res.cloudinary.com/doks3r7lu/image/upload/v1753160761/360_F_241951583_x3Pn4HbvGKfbdvVd43jKluTYB9IaXz1K_jiisrr.jpg" alt="Global export" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
+                      <img src="https://res.cloudinary.com/doks3r7lu/image/upload/v1754403947/ace-cargo-express-pvt-ltd-guindy-chennai-cargo-agents-blfj7u1xuo-250_mmizpw.webp" alt="Global export" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
                     </div>
                     <div className="bg-gradient-to-r from-[#AED581] to-[#2E7D32] text-white px-6 py-3 rounded-full inline-block font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300">
                       2024
@@ -189,7 +189,7 @@ const About = () => {
                 <div className="ml-12 sm:ml-16 flex-1">
                   <div className="flex items-center space-x-3 mb-4">
                     <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-[#AED581] shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-110">
-                      <img src="https://res.cloudinary.com/doks3r7lu/image/upload/v1753160761/360_F_241951583_x3Pn4HbvGKfbdvVd43jKluTYB9IaXz1K_jiisrr.jpg" alt="Global export" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
+                      <img src="https://res.cloudinary.com/doks3r7lu/image/upload/v1754403947/ace-cargo-express-pvt-ltd-guindy-chennai-cargo-agents-blfj7u1xuo-250_mmizpw.webp" alt="Global export" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
                     </div>
                     <div className="bg-gradient-to-r from-[#AED581] to-[#2E7D32] text-white px-4 py-2 rounded-full inline-block font-bold text-sm shadow-lg hover:shadow-xl transition-all duration-300">
                       2024
